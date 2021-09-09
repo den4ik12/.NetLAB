@@ -29,156 +29,168 @@ namespace WinForm
         /// </summary>
         private void InitializeComponent()
         {
-            this.dateTimePicker_deal = new System.Windows.Forms.DateTimePicker();
-            this.label_product_deal = new System.Windows.Forms.Label();
-            this.label_count_deal = new System.Windows.Forms.Label();
-            this.label_consumer_deal = new System.Windows.Forms.Label();
-            this.label_opt_deal = new System.Windows.Forms.Label();
-            this.label_date_deal = new System.Windows.Forms.Label();
-            this.checkBox_wholesale = new System.Windows.Forms.CheckBox();
-            this.comboBox_consumer = new System.Windows.Forms.ComboBox();
-            this.numericUpDown_count_product = new System.Windows.Forms.NumericUpDown();
-            this.comboBox_product = new System.Windows.Forms.ComboBox();
-            this.button_save_deal = new System.Windows.Forms.Button();
-            ((System.ComponentModel.ISupportInitialize)(this.numericUpDown_count_product)).BeginInit();
+            this.dateTimePickerDeal = new System.Windows.Forms.DateTimePicker();
+            this.labelProductDeal = new System.Windows.Forms.Label();
+            this.labelCountDeal = new System.Windows.Forms.Label();
+            this.labelConsumerDeal = new System.Windows.Forms.Label();
+            this.labelOptDeal = new System.Windows.Forms.Label();
+            this.labelDateDeal = new System.Windows.Forms.Label();
+            this.checkBoxWholesale = new System.Windows.Forms.CheckBox();
+            this.comboBoxConsumer = new System.Windows.Forms.ComboBox();
+            this.numericUpDownCountProduct = new System.Windows.Forms.NumericUpDown();
+            this.comboBoxProduct = new System.Windows.Forms.ComboBox();
+            this.buttonSaveDeal = new System.Windows.Forms.Button();
+            ((System.ComponentModel.ISupportInitialize)(this.numericUpDownCountProduct)).BeginInit();
             this.SuspendLayout();
             // 
-            // dateTimePicker_deal
+            // dateTimePickerDeal
             // 
-            this.dateTimePicker_deal.Location = new System.Drawing.Point(102, 236);
-            this.dateTimePicker_deal.Name = "dateTimePicker_deal";
-            this.dateTimePicker_deal.Size = new System.Drawing.Size(203, 20);
-            this.dateTimePicker_deal.TabIndex = 0;
+            this.dateTimePickerDeal.Location = new System.Drawing.Point(136, 290);
+            this.dateTimePickerDeal.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.dateTimePickerDeal.Name = "dateTimePickerDeal";
+            this.dateTimePickerDeal.Size = new System.Drawing.Size(269, 22);
+            this.dateTimePickerDeal.TabIndex = 0;
             // 
-            // label_product_deal
+            // labelProductDeal
             // 
-            this.label_product_deal.AutoSize = true;
-            this.label_product_deal.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.label_product_deal.Location = new System.Drawing.Point(22, 58);
-            this.label_product_deal.Name = "label_product_deal";
-            this.label_product_deal.Size = new System.Drawing.Size(58, 20);
-            this.label_product_deal.TabIndex = 1;
-            this.label_product_deal.Text = "Товар:";
+            this.labelProductDeal.AutoSize = true;
+            this.labelProductDeal.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.labelProductDeal.Location = new System.Drawing.Point(29, 71);
+            this.labelProductDeal.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.labelProductDeal.Name = "labelProductDeal";
+            this.labelProductDeal.Size = new System.Drawing.Size(72, 25);
+            this.labelProductDeal.TabIndex = 1;
+            this.labelProductDeal.Text = "Товар:";
             // 
-            // label_count_deal
+            // labelCountDeal
             // 
-            this.label_count_deal.AutoSize = true;
-            this.label_count_deal.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.label_count_deal.Location = new System.Drawing.Point(22, 106);
-            this.label_count_deal.Name = "label_count_deal";
-            this.label_count_deal.Size = new System.Drawing.Size(104, 20);
-            this.label_count_deal.TabIndex = 2;
-            this.label_count_deal.Text = "Количество:";
+            this.labelCountDeal.AutoSize = true;
+            this.labelCountDeal.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.labelCountDeal.Location = new System.Drawing.Point(29, 130);
+            this.labelCountDeal.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.labelCountDeal.Name = "labelCountDeal";
+            this.labelCountDeal.Size = new System.Drawing.Size(129, 25);
+            this.labelCountDeal.TabIndex = 2;
+            this.labelCountDeal.Text = "Количество:";
             // 
-            // label_consumer_deal
+            // labelConsumerDeal
             // 
-            this.label_consumer_deal.AutoSize = true;
-            this.label_consumer_deal.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.label_consumer_deal.Location = new System.Drawing.Point(22, 149);
-            this.label_consumer_deal.Name = "label_consumer_deal";
-            this.label_consumer_deal.Size = new System.Drawing.Size(104, 20);
-            this.label_consumer_deal.TabIndex = 3;
-            this.label_consumer_deal.Text = "Покупатель:";
+            this.labelConsumerDeal.AutoSize = true;
+            this.labelConsumerDeal.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.labelConsumerDeal.Location = new System.Drawing.Point(29, 183);
+            this.labelConsumerDeal.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.labelConsumerDeal.Name = "labelConsumerDeal";
+            this.labelConsumerDeal.Size = new System.Drawing.Size(128, 25);
+            this.labelConsumerDeal.TabIndex = 3;
+            this.labelConsumerDeal.Text = "Покупатель:";
             // 
-            // label_opt_deal
+            // labelOptDeal
             // 
-            this.label_opt_deal.AutoSize = true;
-            this.label_opt_deal.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.label_opt_deal.Location = new System.Drawing.Point(22, 191);
-            this.label_opt_deal.Name = "label_opt_deal";
-            this.label_opt_deal.Size = new System.Drawing.Size(141, 20);
-            this.label_opt_deal.TabIndex = 4;
-            this.label_opt_deal.Text = "Оптовая закупка:";
+            this.labelOptDeal.AutoSize = true;
+            this.labelOptDeal.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.labelOptDeal.Location = new System.Drawing.Point(29, 235);
+            this.labelOptDeal.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.labelOptDeal.Name = "labelOptDeal";
+            this.labelOptDeal.Size = new System.Drawing.Size(174, 25);
+            this.labelOptDeal.TabIndex = 4;
+            this.labelOptDeal.Text = "Оптовая закупка:";
             // 
-            // label_date_deal
+            // labelDateDeal
             // 
-            this.label_date_deal.AutoSize = true;
-            this.label_date_deal.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.label_date_deal.Location = new System.Drawing.Point(25, 236);
-            this.label_date_deal.Name = "label_date_deal";
-            this.label_date_deal.Size = new System.Drawing.Size(52, 20);
-            this.label_date_deal.TabIndex = 5;
-            this.label_date_deal.Text = "Дата:";
+            this.labelDateDeal.AutoSize = true;
+            this.labelDateDeal.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.labelDateDeal.Location = new System.Drawing.Point(33, 290);
+            this.labelDateDeal.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.labelDateDeal.Name = "labelDateDeal";
+            this.labelDateDeal.Size = new System.Drawing.Size(67, 25);
+            this.labelDateDeal.TabIndex = 5;
+            this.labelDateDeal.Text = "Дата:";
             // 
-            // checkBox_wholesale
+            // checkBoxWholesale
             // 
-            this.checkBox_wholesale.AutoSize = true;
-            this.checkBox_wholesale.Location = new System.Drawing.Point(169, 197);
-            this.checkBox_wholesale.Name = "checkBox_wholesale";
-            this.checkBox_wholesale.Size = new System.Drawing.Size(15, 14);
-            this.checkBox_wholesale.TabIndex = 6;
-            this.checkBox_wholesale.UseVisualStyleBackColor = true;
-            this.checkBox_wholesale.CheckedChanged += new System.EventHandler(this.checkBox_wholesale_CheckedChanged);
+            this.checkBoxWholesale.AutoSize = true;
+            this.checkBoxWholesale.Location = new System.Drawing.Point(225, 242);
+            this.checkBoxWholesale.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.checkBoxWholesale.Name = "checkBoxWholesale";
+            this.checkBoxWholesale.Size = new System.Drawing.Size(18, 17);
+            this.checkBoxWholesale.TabIndex = 6;
+            this.checkBoxWholesale.UseVisualStyleBackColor = true;
+            this.checkBoxWholesale.CheckedChanged += new System.EventHandler(this.checkBox_wholesale_CheckedChanged);
             // 
-            // comboBox_consumer
+            // comboBoxConsumer
             // 
-            this.comboBox_consumer.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.comboBox_consumer.FormattingEnabled = true;
-            this.comboBox_consumer.Location = new System.Drawing.Point(132, 149);
-            this.comboBox_consumer.Name = "comboBox_consumer";
-            this.comboBox_consumer.Size = new System.Drawing.Size(121, 21);
-            this.comboBox_consumer.TabIndex = 7;
+            this.comboBoxConsumer.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.comboBoxConsumer.FormattingEnabled = true;
+            this.comboBoxConsumer.Location = new System.Drawing.Point(176, 183);
+            this.comboBoxConsumer.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.comboBoxConsumer.Name = "comboBoxConsumer";
+            this.comboBoxConsumer.Size = new System.Drawing.Size(160, 24);
+            this.comboBoxConsumer.TabIndex = 7;
             // 
-            // numericUpDown_count_product
+            // numericUpDownCountProduct
             // 
-            this.numericUpDown_count_product.Location = new System.Drawing.Point(133, 105);
-            this.numericUpDown_count_product.Maximum = new decimal(new int[] {
+            this.numericUpDownCountProduct.Location = new System.Drawing.Point(177, 129);
+            this.numericUpDownCountProduct.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.numericUpDownCountProduct.Maximum = new decimal(new int[] {
             10000,
             0,
             0,
             0});
-            this.numericUpDown_count_product.Minimum = new decimal(new int[] {
+            this.numericUpDownCountProduct.Minimum = new decimal(new int[] {
             1,
             0,
             0,
             0});
-            this.numericUpDown_count_product.Name = "numericUpDown_count_product";
-            this.numericUpDown_count_product.Size = new System.Drawing.Size(120, 20);
-            this.numericUpDown_count_product.TabIndex = 8;
-            this.numericUpDown_count_product.Value = new decimal(new int[] {
+            this.numericUpDownCountProduct.Name = "numericUpDownCountProduct";
+            this.numericUpDownCountProduct.Size = new System.Drawing.Size(160, 22);
+            this.numericUpDownCountProduct.TabIndex = 8;
+            this.numericUpDownCountProduct.Value = new decimal(new int[] {
             1,
             0,
             0,
             0});
             // 
-            // comboBox_product
+            // comboBoxProduct
             // 
-            this.comboBox_product.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.comboBox_product.FormattingEnabled = true;
-            this.comboBox_product.Location = new System.Drawing.Point(87, 56);
-            this.comboBox_product.Name = "comboBox_product";
-            this.comboBox_product.Size = new System.Drawing.Size(121, 21);
-            this.comboBox_product.TabIndex = 9;
+            this.comboBoxProduct.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.comboBoxProduct.FormattingEnabled = true;
+            this.comboBoxProduct.Location = new System.Drawing.Point(116, 69);
+            this.comboBoxProduct.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.comboBoxProduct.Name = "comboBoxProduct";
+            this.comboBoxProduct.Size = new System.Drawing.Size(160, 24);
+            this.comboBoxProduct.TabIndex = 9;
             // 
-            // button_save_deal
+            // buttonSaveDeal
             // 
-            this.button_save_deal.Location = new System.Drawing.Point(43, 300);
-            this.button_save_deal.Name = "button_save_deal";
-            this.button_save_deal.Size = new System.Drawing.Size(231, 44);
-            this.button_save_deal.TabIndex = 10;
-            this.button_save_deal.Text = "Сохранить";
-            this.button_save_deal.UseVisualStyleBackColor = true;
-            this.button_save_deal.Click += new System.EventHandler(this.button_save_deal_Click);
+            this.buttonSaveDeal.Location = new System.Drawing.Point(57, 369);
+            this.buttonSaveDeal.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.buttonSaveDeal.Name = "buttonSaveDeal";
+            this.buttonSaveDeal.Size = new System.Drawing.Size(308, 54);
+            this.buttonSaveDeal.TabIndex = 10;
+            this.buttonSaveDeal.Text = "Сохранить";
+            this.buttonSaveDeal.UseVisualStyleBackColor = true;
+            this.buttonSaveDeal.Click += new System.EventHandler(this.button_save_deal_Click);
             // 
             // FormDeal
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(328, 382);
-            this.Controls.Add(this.button_save_deal);
-            this.Controls.Add(this.comboBox_product);
-            this.Controls.Add(this.numericUpDown_count_product);
-            this.Controls.Add(this.comboBox_consumer);
-            this.Controls.Add(this.checkBox_wholesale);
-            this.Controls.Add(this.label_date_deal);
-            this.Controls.Add(this.label_opt_deal);
-            this.Controls.Add(this.label_consumer_deal);
-            this.Controls.Add(this.label_count_deal);
-            this.Controls.Add(this.label_product_deal);
-            this.Controls.Add(this.dateTimePicker_deal);
+            this.ClientSize = new System.Drawing.Size(437, 470);
+            this.Controls.Add(this.buttonSaveDeal);
+            this.Controls.Add(this.comboBoxProduct);
+            this.Controls.Add(this.numericUpDownCountProduct);
+            this.Controls.Add(this.comboBoxConsumer);
+            this.Controls.Add(this.checkBoxWholesale);
+            this.Controls.Add(this.labelDateDeal);
+            this.Controls.Add(this.labelOptDeal);
+            this.Controls.Add(this.labelConsumerDeal);
+            this.Controls.Add(this.labelCountDeal);
+            this.Controls.Add(this.labelProductDeal);
+            this.Controls.Add(this.dateTimePickerDeal);
+            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.Name = "FormDeal";
             this.Text = "FormDeal";
-            ((System.ComponentModel.ISupportInitialize)(this.numericUpDown_count_product)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.numericUpDownCountProduct)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -186,16 +198,16 @@ namespace WinForm
 
         #endregion
 
-        private System.Windows.Forms.DateTimePicker dateTimePicker_deal;
-        private System.Windows.Forms.Label label_product_deal;
-        private System.Windows.Forms.Label label_count_deal;
-        private System.Windows.Forms.Label label_consumer_deal;
-        private System.Windows.Forms.Label label_opt_deal;
-        private System.Windows.Forms.Label label_date_deal;
-        private System.Windows.Forms.CheckBox checkBox_wholesale;
-        private System.Windows.Forms.ComboBox comboBox_consumer;
-        private System.Windows.Forms.NumericUpDown numericUpDown_count_product;
-        private System.Windows.Forms.ComboBox comboBox_product;
-        private System.Windows.Forms.Button button_save_deal;
+        private System.Windows.Forms.DateTimePicker dateTimePickerDeal;
+        private System.Windows.Forms.Label labelProductDeal;
+        private System.Windows.Forms.Label labelCountDeal;
+        private System.Windows.Forms.Label labelConsumerDeal;
+        private System.Windows.Forms.Label labelOptDeal;
+        private System.Windows.Forms.Label labelDateDeal;
+        private System.Windows.Forms.CheckBox checkBoxWholesale;
+        private System.Windows.Forms.ComboBox comboBoxConsumer;
+        private System.Windows.Forms.NumericUpDown numericUpDownCountProduct;
+        private System.Windows.Forms.ComboBox comboBoxProduct;
+        private System.Windows.Forms.Button buttonSaveDeal;
     }
 }

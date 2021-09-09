@@ -135,7 +135,7 @@ namespace ClassFinalProduct
                 RemoveDeal(DealsForProduct[i]);
             }
         }
-        public void RemoveRoom(int consumerKey)
+        public void RemoveConsumer(int consumerKey)
         {
             _consumers.Remove(consumerKey);
             //Генерируем событие о том, что покупатель удалён

@@ -30,110 +30,113 @@ namespace WinForm
         private void InitializeComponent()
         {
             this.components = new System.ComponentModel.Container();
-            this.My_menu = new System.Windows.Forms.MenuStrip();
-            this.product_MenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.add_product_MenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.change_product_MenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.покупателиToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.add_consumer_menuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.change_consumer_menuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.contextMenuStrip1 = new System.Windows.Forms.ContextMenuStrip(this.components);
-            this.file_menu = new System.Windows.Forms.ToolStripMenuItem();
-            this.menu_exit = new System.Windows.Forms.ToolStripMenuItem();
-            this.My_menu.SuspendLayout();
+            this.MenuStripMy = new System.Windows.Forms.MenuStrip();
+            this.ToolStripMenuItemFile = new System.Windows.Forms.ToolStripMenuItem();
+            this.ToolStripMenuItemExit = new System.Windows.Forms.ToolStripMenuItem();
+            this.ToolStripMenuItemProduct = new System.Windows.Forms.ToolStripMenuItem();
+            this.ToolStripMenuItemAddProduct = new System.Windows.Forms.ToolStripMenuItem();
+            this.ToolStripMenuItemChangeProduct = new System.Windows.Forms.ToolStripMenuItem();
+            this.ToolStripMenuItemConsumer = new System.Windows.Forms.ToolStripMenuItem();
+            this.ToolStripMenuItemAddConsumer = new System.Windows.Forms.ToolStripMenuItem();
+            this.ToolStripMenuItemChangeConsumer = new System.Windows.Forms.ToolStripMenuItem();
+            this.MenuStripContext = new System.Windows.Forms.ContextMenuStrip(this.components);
+            this.MenuStripMy.SuspendLayout();
             this.SuspendLayout();
             // 
-            // My_menu
+            // MenuStripMy
             // 
-            this.My_menu.Font = new System.Drawing.Font("Segoe UI", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.My_menu.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.file_menu,
-            this.product_MenuItem,
-            this.покупателиToolStripMenuItem});
-            this.My_menu.Location = new System.Drawing.Point(0, 0);
-            this.My_menu.Name = "My_menu";
-            this.My_menu.Size = new System.Drawing.Size(800, 33);
-            this.My_menu.TabIndex = 0;
-            this.My_menu.Text = "menuStrip1";
+            this.MenuStripMy.Font = new System.Drawing.Font("Segoe UI", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.MenuStripMy.ImageScalingSize = new System.Drawing.Size(20, 20);
+            this.MenuStripMy.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.ToolStripMenuItemFile,
+            this.ToolStripMenuItemProduct,
+            this.ToolStripMenuItemConsumer});
+            this.MenuStripMy.Location = new System.Drawing.Point(0, 0);
+            this.MenuStripMy.Name = "MenuStripMy";
+            this.MenuStripMy.Size = new System.Drawing.Size(1067, 40);
+            this.MenuStripMy.TabIndex = 0;
+            this.MenuStripMy.Text = "menuStrip1";
             // 
-            // product_MenuItem
+            // ToolStripMenuItemFile
             // 
-            this.product_MenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.add_product_MenuItem,
-            this.change_product_MenuItem});
-            this.product_MenuItem.Name = "product_MenuItem";
-            this.product_MenuItem.Size = new System.Drawing.Size(89, 29);
-            this.product_MenuItem.Text = "Товары";
+            this.ToolStripMenuItemFile.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.ToolStripMenuItemExit});
+            this.ToolStripMenuItemFile.Name = "ToolStripMenuItemFile";
+            this.ToolStripMenuItemFile.Size = new System.Drawing.Size(85, 36);
+            this.ToolStripMenuItemFile.Text = "Файл";
             // 
-            // add_product_MenuItem
+            // ToolStripMenuItemExit
             // 
-            this.add_product_MenuItem.Name = "add_product_MenuItem";
-            this.add_product_MenuItem.Size = new System.Drawing.Size(213, 30);
-            this.add_product_MenuItem.Text = "Добавить";
-            this.add_product_MenuItem.Click += new System.EventHandler(this.add_product_MenuItem_Click);
+            this.ToolStripMenuItemExit.Name = "ToolStripMenuItemExit";
+            this.ToolStripMenuItemExit.Size = new System.Drawing.Size(224, 36);
+            this.ToolStripMenuItemExit.Text = "Выход";
+            this.ToolStripMenuItemExit.Click += new System.EventHandler(this.menu_exit_Click);
             // 
-            // change_product_MenuItem
+            // ToolStripMenuItemProduct
             // 
-            this.change_product_MenuItem.Name = "change_product_MenuItem";
-            this.change_product_MenuItem.Size = new System.Drawing.Size(213, 30);
-            this.change_product_MenuItem.Text = "Редактировать";
-            this.change_product_MenuItem.Click += new System.EventHandler(this.change_product_MenuItem_Click);
+            this.ToolStripMenuItemProduct.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.ToolStripMenuItemAddProduct,
+            this.ToolStripMenuItemChangeProduct});
+            this.ToolStripMenuItemProduct.Name = "ToolStripMenuItemProduct";
+            this.ToolStripMenuItemProduct.Size = new System.Drawing.Size(112, 36);
+            this.ToolStripMenuItemProduct.Text = "Товары";
             // 
-            // покупателиToolStripMenuItem
+            // ToolStripMenuItemAddProduct
             // 
-            this.покупателиToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.add_consumer_menuItem,
-            this.change_consumer_menuItem});
-            this.покупателиToolStripMenuItem.Name = "покупателиToolStripMenuItem";
-            this.покупателиToolStripMenuItem.Size = new System.Drawing.Size(127, 29);
-            this.покупателиToolStripMenuItem.Text = "Покупатели";
+            this.ToolStripMenuItemAddProduct.Name = "ToolStripMenuItemAddProduct";
+            this.ToolStripMenuItemAddProduct.Size = new System.Drawing.Size(266, 36);
+            this.ToolStripMenuItemAddProduct.Text = "Добавить";
+            this.ToolStripMenuItemAddProduct.Click += new System.EventHandler(this.add_product_MenuItem_Click);
             // 
-            // add_consumer_menuItem
+            // ToolStripMenuItemChangeProduct
             // 
-            this.add_consumer_menuItem.Name = "add_consumer_menuItem";
-            this.add_consumer_menuItem.Size = new System.Drawing.Size(213, 30);
-            this.add_consumer_menuItem.Text = "Добавить";
-            this.add_consumer_menuItem.Click += new System.EventHandler(this.add_consumer_menuItem_Click);
+            this.ToolStripMenuItemChangeProduct.Name = "ToolStripMenuItemChangeProduct";
+            this.ToolStripMenuItemChangeProduct.Size = new System.Drawing.Size(266, 36);
+            this.ToolStripMenuItemChangeProduct.Text = "Редактировать";
+            this.ToolStripMenuItemChangeProduct.Click += new System.EventHandler(this.change_product_MenuItem_Click);
             // 
-            // change_consumer_menuItem
+            // ToolStripMenuItemConsumer
             // 
-            this.change_consumer_menuItem.Name = "change_consumer_menuItem";
-            this.change_consumer_menuItem.Size = new System.Drawing.Size(213, 30);
-            this.change_consumer_menuItem.Text = "Редактировать";
-            this.change_consumer_menuItem.Click += new System.EventHandler(this.change_consumer_menuItem_Click);
+            this.ToolStripMenuItemConsumer.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.ToolStripMenuItemAddConsumer,
+            this.ToolStripMenuItemChangeConsumer});
+            this.ToolStripMenuItemConsumer.Name = "ToolStripMenuItemConsumer";
+            this.ToolStripMenuItemConsumer.Size = new System.Drawing.Size(160, 36);
+            this.ToolStripMenuItemConsumer.Text = "Покупатели";
             // 
-            // contextMenuStrip1
+            // ToolStripMenuItemAddConsumer
             // 
-            this.contextMenuStrip1.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.contextMenuStrip1.Name = "contextMenuStrip1";
-            this.contextMenuStrip1.Size = new System.Drawing.Size(61, 4);
+            this.ToolStripMenuItemAddConsumer.Name = "ToolStripMenuItemAddConsumer";
+            this.ToolStripMenuItemAddConsumer.Size = new System.Drawing.Size(266, 36);
+            this.ToolStripMenuItemAddConsumer.Text = "Добавить";
+            this.ToolStripMenuItemAddConsumer.Click += new System.EventHandler(this.add_consumer_menuItem_Click);
             // 
-            // file_menu
+            // ToolStripMenuItemChangeConsumer
             // 
-            this.file_menu.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.menu_exit});
-            this.file_menu.Name = "file_menu";
-            this.file_menu.Size = new System.Drawing.Size(69, 29);
-            this.file_menu.Text = "Файл";
+            this.ToolStripMenuItemChangeConsumer.Name = "ToolStripMenuItemChangeConsumer";
+            this.ToolStripMenuItemChangeConsumer.Size = new System.Drawing.Size(266, 36);
+            this.ToolStripMenuItemChangeConsumer.Text = "Редактировать";
+            this.ToolStripMenuItemChangeConsumer.Click += new System.EventHandler(this.change_consumer_menuItem_Click);
             // 
-            // menu_exit
+            // MenuStripContext
             // 
-            this.menu_exit.Name = "menu_exit";
-            this.menu_exit.Size = new System.Drawing.Size(180, 30);
-            this.menu_exit.Text = "Выход";
-            this.menu_exit.Click += new System.EventHandler(this.menu_exit_Click);
+            this.MenuStripContext.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.MenuStripContext.ImageScalingSize = new System.Drawing.Size(20, 20);
+            this.MenuStripContext.Name = "contextMenuStrip1";
+            this.MenuStripContext.Size = new System.Drawing.Size(61, 4);
             // 
             // FormMain
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(800, 450);
-            this.Controls.Add(this.My_menu);
-            this.MainMenuStrip = this.My_menu;
+            this.ClientSize = new System.Drawing.Size(1067, 554);
+            this.Controls.Add(this.MenuStripMy);
+            this.MainMenuStrip = this.MenuStripMy;
+            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.Name = "FormMain";
             this.Text = "Реализация готовой продукции";
-            this.My_menu.ResumeLayout(false);
-            this.My_menu.PerformLayout();
+            this.MenuStripMy.ResumeLayout(false);
+            this.MenuStripMy.PerformLayout();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -141,16 +144,16 @@ namespace WinForm
 
         #endregion
 
-        private System.Windows.Forms.MenuStrip My_menu;
-        private System.Windows.Forms.ToolStripMenuItem product_MenuItem;
-        private System.Windows.Forms.ToolStripMenuItem add_product_MenuItem;
-        private System.Windows.Forms.ToolStripMenuItem change_product_MenuItem;
-        private System.Windows.Forms.ToolStripMenuItem покупателиToolStripMenuItem;
-        private System.Windows.Forms.ToolStripMenuItem add_consumer_menuItem;
-        private System.Windows.Forms.ToolStripMenuItem change_consumer_menuItem;
-        private System.Windows.Forms.ContextMenuStrip contextMenuStrip1;
-        private System.Windows.Forms.ToolStripMenuItem file_menu;
-        private System.Windows.Forms.ToolStripMenuItem menu_exit;
+        private System.Windows.Forms.MenuStrip MenuStripMy;
+        private System.Windows.Forms.ToolStripMenuItem ToolStripMenuItemProduct;
+        private System.Windows.Forms.ToolStripMenuItem ToolStripMenuItemAddProduct;
+        private System.Windows.Forms.ToolStripMenuItem ToolStripMenuItemChangeProduct;
+        private System.Windows.Forms.ToolStripMenuItem ToolStripMenuItemConsumer;
+        private System.Windows.Forms.ToolStripMenuItem ToolStripMenuItemAddConsumer;
+        private System.Windows.Forms.ToolStripMenuItem ToolStripMenuItemChangeConsumer;
+        private System.Windows.Forms.ContextMenuStrip MenuStripContext;
+        private System.Windows.Forms.ToolStripMenuItem ToolStripMenuItemFile;
+        private System.Windows.Forms.ToolStripMenuItem ToolStripMenuItemExit;
     }
 }
 

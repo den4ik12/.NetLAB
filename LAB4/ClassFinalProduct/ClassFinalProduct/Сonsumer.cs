@@ -11,24 +11,24 @@ namespace ClassFinalProduct
     /// </summary>
     public class Сonsumer : IValidatable
     {
-        public int _number_phone { get; set; } = 0; //номер телефона
-        public User _person { get; set; } //личная информация покупателя
-        public string _address { get; set; } //адрес покупателя
+        public int NumberPhone { get; set; } = 0; //номер телефона
+        public User Person { get; set; } //личная информация покупателя
+        public string Address { get; set; } //адрес покупателя
         public Сonsumer()
         {
         }
 
         public Сonsumer(int number_phone, User person, string addr)
         {
-            _number_phone = number_phone;
-            _person = person;
-            _address = addr;
+            NumberPhone = number_phone;
+            Person = person;
+            Address = addr;
         }
-        public bool isValid
+        public bool IsValid
         {
             get
             {
-                if (_number_phone != 0 && _person.isValid && _address != null)
+                if (NumberPhone != 0 && Person.IsValid && Address != null)
                     return true;
                 else
                     return false;
@@ -36,7 +36,7 @@ namespace ClassFinalProduct
         }
         public override string ToString()
         {
-            return $"{_person}";
+            return $"{Person}";
         } //вывод имени и фамилии
     } 
 }

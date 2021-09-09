@@ -69,7 +69,7 @@ namespace LABS
             double d;
             foreach (string value in array_value)
             {
-                if (double.TryParse(value, out d) && !(int.TryParse(value,out m))){
+                if (double.TryParse(value, out d)){
                     p4_comboBox1.Items.Add(d);
                 }
             }
@@ -95,7 +95,7 @@ namespace LABS
             string[] array_value = p6_textBox1.Lines;
             for (int i = array_value.Length-1; i >= 0; i--)
             {
-                if (double.TryParse(array_value[i], out d) && !(int.TryParse(array_value[i], out m)))
+                if (double.TryParse(array_value[i], out d))
                 {
                     p6_textBox2.Text += $"{array_value[i]}\r\n";
                 }
@@ -109,6 +109,16 @@ namespace LABS
             double h = Convert.ToDouble(p7_textBox3.Text);
             for (double x = start; x <= end; x += h)
                 p7_textBox4.Text += $"x={x};  f(x)={Math.Sin(x)*180/Math.PI/(Math.Abs(x)+1)}\r\n";
+        }
+
+        private void p4_textBox2_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void p6_textBox1_TextChanged(object sender, EventArgs e)
+        {
+
         }
     }
 }

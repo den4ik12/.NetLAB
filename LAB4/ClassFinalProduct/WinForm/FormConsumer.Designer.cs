@@ -29,145 +29,157 @@ namespace WinForm
         /// </summary>
         private void InitializeComponent()
         {
-            this.save_customer = new System.Windows.Forms.Button();
-            this.label_name_customer = new System.Windows.Forms.Label();
-            this.label_lastname = new System.Windows.Forms.Label();
-            this.label_age = new System.Windows.Forms.Label();
+            this.saveCustomer = new System.Windows.Forms.Button();
+            this.labelNameCustomer = new System.Windows.Forms.Label();
+            this.labelLastname = new System.Windows.Forms.Label();
+            this.labelAge = new System.Windows.Forms.Label();
             this.label_phone = new System.Windows.Forms.Label();
-            this.label_addr = new System.Windows.Forms.Label();
-            this.input_name_customer = new System.Windows.Forms.TextBox();
+            this.labelAddr = new System.Windows.Forms.Label();
+            this.inputNameNustomer = new System.Windows.Forms.TextBox();
             this.inpute_lastName = new System.Windows.Forms.TextBox();
-            this.Age_input = new System.Windows.Forms.NumericUpDown();
-            this.phone_input = new System.Windows.Forms.TextBox();
-            this.adrr_input = new System.Windows.Forms.TextBox();
-            ((System.ComponentModel.ISupportInitialize)(this.Age_input)).BeginInit();
+            this.ageInput = new System.Windows.Forms.NumericUpDown();
+            this.phoneInput = new System.Windows.Forms.TextBox();
+            this.adrrInput = new System.Windows.Forms.TextBox();
+            ((System.ComponentModel.ISupportInitialize)(this.ageInput)).BeginInit();
             this.SuspendLayout();
             // 
-            // save_customer
+            // saveCustomer
             // 
-            this.save_customer.DialogResult = System.Windows.Forms.DialogResult.OK;
-            this.save_customer.Location = new System.Drawing.Point(378, 182);
-            this.save_customer.Name = "save_customer";
-            this.save_customer.Size = new System.Drawing.Size(149, 48);
-            this.save_customer.TabIndex = 0;
-            this.save_customer.Text = "Сохранить";
-            this.save_customer.UseVisualStyleBackColor = true;
-            this.save_customer.Click += new System.EventHandler(this.save_customer_Click);
+            this.saveCustomer.DialogResult = System.Windows.Forms.DialogResult.OK;
+            this.saveCustomer.Location = new System.Drawing.Point(504, 224);
+            this.saveCustomer.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.saveCustomer.Name = "saveCustomer";
+            this.saveCustomer.Size = new System.Drawing.Size(199, 59);
+            this.saveCustomer.TabIndex = 0;
+            this.saveCustomer.Text = "Сохранить";
+            this.saveCustomer.UseVisualStyleBackColor = true;
+            this.saveCustomer.Click += new System.EventHandler(this.save_customer_Click);
             // 
-            // label_name_customer
+            // labelNameCustomer
             // 
-            this.label_name_customer.AutoSize = true;
-            this.label_name_customer.Location = new System.Drawing.Point(31, 36);
-            this.label_name_customer.Name = "label_name_customer";
-            this.label_name_customer.Size = new System.Drawing.Size(29, 13);
-            this.label_name_customer.TabIndex = 1;
-            this.label_name_customer.Text = "Имя";
+            this.labelNameCustomer.AutoSize = true;
+            this.labelNameCustomer.Location = new System.Drawing.Point(41, 44);
+            this.labelNameCustomer.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.labelNameCustomer.Name = "labelNameCustomer";
+            this.labelNameCustomer.Size = new System.Drawing.Size(35, 17);
+            this.labelNameCustomer.TabIndex = 1;
+            this.labelNameCustomer.Text = "Имя";
             // 
-            // label_lastname
+            // labelLastname
             // 
-            this.label_lastname.AutoSize = true;
-            this.label_lastname.Location = new System.Drawing.Point(31, 76);
-            this.label_lastname.Name = "label_lastname";
-            this.label_lastname.Size = new System.Drawing.Size(56, 13);
-            this.label_lastname.TabIndex = 2;
-            this.label_lastname.Text = "Фамилия";
+            this.labelLastname.AutoSize = true;
+            this.labelLastname.Location = new System.Drawing.Point(41, 94);
+            this.labelLastname.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.labelLastname.Name = "labelLastname";
+            this.labelLastname.Size = new System.Drawing.Size(70, 17);
+            this.labelLastname.TabIndex = 2;
+            this.labelLastname.Text = "Фамилия";
             // 
-            // label_age
+            // labelAge
             // 
-            this.label_age.AutoSize = true;
-            this.label_age.Location = new System.Drawing.Point(31, 115);
-            this.label_age.Name = "label_age";
-            this.label_age.Size = new System.Drawing.Size(49, 13);
-            this.label_age.TabIndex = 3;
-            this.label_age.Text = "Возраст";
+            this.labelAge.AutoSize = true;
+            this.labelAge.Location = new System.Drawing.Point(41, 142);
+            this.labelAge.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.labelAge.Name = "labelAge";
+            this.labelAge.Size = new System.Drawing.Size(62, 17);
+            this.labelAge.TabIndex = 3;
+            this.labelAge.Text = "Возраст";
             // 
             // label_phone
             // 
             this.label_phone.AutoSize = true;
-            this.label_phone.Location = new System.Drawing.Point(355, 32);
+            this.label_phone.Location = new System.Drawing.Point(473, 39);
+            this.label_phone.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label_phone.Name = "label_phone";
-            this.label_phone.Size = new System.Drawing.Size(52, 13);
+            this.label_phone.Size = new System.Drawing.Size(68, 17);
             this.label_phone.TabIndex = 4;
             this.label_phone.Text = "Телефон";
             // 
-            // label_addr
+            // labelAddr
             // 
-            this.label_addr.AutoSize = true;
-            this.label_addr.Location = new System.Drawing.Point(355, 72);
-            this.label_addr.Name = "label_addr";
-            this.label_addr.Size = new System.Drawing.Size(38, 13);
-            this.label_addr.TabIndex = 5;
-            this.label_addr.Text = "Адрес";
+            this.labelAddr.AutoSize = true;
+            this.labelAddr.Location = new System.Drawing.Point(473, 89);
+            this.labelAddr.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.labelAddr.Name = "labelAddr";
+            this.labelAddr.Size = new System.Drawing.Size(48, 17);
+            this.labelAddr.TabIndex = 5;
+            this.labelAddr.Text = "Адрес";
             // 
-            // input_name_customer
+            // inputNameNustomer
             // 
-            this.input_name_customer.Location = new System.Drawing.Point(121, 29);
-            this.input_name_customer.Name = "input_name_customer";
-            this.input_name_customer.Size = new System.Drawing.Size(100, 20);
-            this.input_name_customer.TabIndex = 6;
+            this.inputNameNustomer.Location = new System.Drawing.Point(161, 36);
+            this.inputNameNustomer.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.inputNameNustomer.Name = "inputNameNustomer";
+            this.inputNameNustomer.Size = new System.Drawing.Size(132, 22);
+            this.inputNameNustomer.TabIndex = 6;
             // 
             // inpute_lastName
             // 
-            this.inpute_lastName.Location = new System.Drawing.Point(121, 69);
+            this.inpute_lastName.Location = new System.Drawing.Point(161, 85);
+            this.inpute_lastName.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.inpute_lastName.Name = "inpute_lastName";
-            this.inpute_lastName.Size = new System.Drawing.Size(100, 20);
+            this.inpute_lastName.Size = new System.Drawing.Size(132, 22);
             this.inpute_lastName.TabIndex = 7;
             // 
-            // Age_input
+            // ageInput
             // 
-            this.Age_input.Location = new System.Drawing.Point(121, 115);
-            this.Age_input.Maximum = new decimal(new int[] {
+            this.ageInput.Location = new System.Drawing.Point(161, 142);
+            this.ageInput.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.ageInput.Maximum = new decimal(new int[] {
             200,
             0,
             0,
             0});
-            this.Age_input.Minimum = new decimal(new int[] {
+            this.ageInput.Minimum = new decimal(new int[] {
             1,
             0,
             0,
             0});
-            this.Age_input.Name = "Age_input";
-            this.Age_input.Size = new System.Drawing.Size(100, 20);
-            this.Age_input.TabIndex = 8;
-            this.Age_input.Value = new decimal(new int[] {
+            this.ageInput.Name = "ageInput";
+            this.ageInput.Size = new System.Drawing.Size(133, 22);
+            this.ageInput.TabIndex = 8;
+            this.ageInput.Value = new decimal(new int[] {
             1,
             0,
             0,
             0});
             // 
-            // phone_input
+            // phoneInput
             // 
-            this.phone_input.Location = new System.Drawing.Point(427, 29);
-            this.phone_input.Name = "phone_input";
-            this.phone_input.Size = new System.Drawing.Size(100, 20);
-            this.phone_input.TabIndex = 9;
+            this.phoneInput.Location = new System.Drawing.Point(569, 36);
+            this.phoneInput.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.phoneInput.Name = "phoneInput";
+            this.phoneInput.Size = new System.Drawing.Size(132, 22);
+            this.phoneInput.TabIndex = 9;
             // 
-            // adrr_input
+            // adrrInput
             // 
-            this.adrr_input.Location = new System.Drawing.Point(429, 69);
-            this.adrr_input.Name = "adrr_input";
-            this.adrr_input.Size = new System.Drawing.Size(100, 20);
-            this.adrr_input.TabIndex = 10;
+            this.adrrInput.Location = new System.Drawing.Point(572, 85);
+            this.adrrInput.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.adrrInput.Name = "adrrInput";
+            this.adrrInput.Size = new System.Drawing.Size(132, 22);
+            this.adrrInput.TabIndex = 10;
             // 
             // FormConsumer
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(539, 242);
-            this.Controls.Add(this.adrr_input);
-            this.Controls.Add(this.phone_input);
-            this.Controls.Add(this.Age_input);
+            this.ClientSize = new System.Drawing.Size(719, 298);
+            this.Controls.Add(this.adrrInput);
+            this.Controls.Add(this.phoneInput);
+            this.Controls.Add(this.ageInput);
             this.Controls.Add(this.inpute_lastName);
-            this.Controls.Add(this.input_name_customer);
-            this.Controls.Add(this.label_addr);
+            this.Controls.Add(this.inputNameNustomer);
+            this.Controls.Add(this.labelAddr);
             this.Controls.Add(this.label_phone);
-            this.Controls.Add(this.label_age);
-            this.Controls.Add(this.label_lastname);
-            this.Controls.Add(this.label_name_customer);
-            this.Controls.Add(this.save_customer);
+            this.Controls.Add(this.labelAge);
+            this.Controls.Add(this.labelLastname);
+            this.Controls.Add(this.labelNameCustomer);
+            this.Controls.Add(this.saveCustomer);
+            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.Name = "FormConsumer";
             this.Text = "FormCustomer";
-            ((System.ComponentModel.ISupportInitialize)(this.Age_input)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.ageInput)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -175,16 +187,16 @@ namespace WinForm
 
         #endregion
 
-        private System.Windows.Forms.Button save_customer;
-        private System.Windows.Forms.Label label_name_customer;
-        private System.Windows.Forms.Label label_lastname;
-        private System.Windows.Forms.Label label_age;
+        private System.Windows.Forms.Button saveCustomer;
+        private System.Windows.Forms.Label labelNameCustomer;
+        private System.Windows.Forms.Label labelLastname;
+        private System.Windows.Forms.Label labelAge;
         private System.Windows.Forms.Label label_phone;
-        private System.Windows.Forms.Label label_addr;
-        private System.Windows.Forms.TextBox input_name_customer;
+        private System.Windows.Forms.Label labelAddr;
+        private System.Windows.Forms.TextBox inputNameNustomer;
         private System.Windows.Forms.TextBox inpute_lastName;
-        private System.Windows.Forms.NumericUpDown Age_input;
-        private System.Windows.Forms.TextBox phone_input;
-        private System.Windows.Forms.TextBox adrr_input;
+        private System.Windows.Forms.NumericUpDown ageInput;
+        private System.Windows.Forms.TextBox phoneInput;
+        private System.Windows.Forms.TextBox adrrInput;
     }
 }

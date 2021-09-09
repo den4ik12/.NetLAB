@@ -73,11 +73,11 @@ namespace WinForm
         private void _company_ConsumerRemoved(object sender, EventArgs e)
         {
             var userId = (int)sender;
-            for (int i = 0; i < listConsumer.Items.Count; i++)
+            for (int i = 0; i < listViewConsumer.Items.Count; i++)
             {
-                if (((ClassFinalProduct.Сonsumer)listConsumer.Items[i].Tag).UserId == userId)
+                if (((ClassFinalProduct.Сonsumer)listViewConsumer.Items[i].Tag).UserId == userId)
                 {
-                    listConsumer.Items.RemoveAt(i);
+                    listViewConsumer.Items.RemoveAt(i);
                     break;
                 }
             }
@@ -139,22 +139,22 @@ namespace WinForm
                 MessageBox.Show("Не выбрана строка с продуктом");
             }
         }
-        
+
         /// <summary>
         /// Метод обновления списка товаров
         /// </summary>
         private void update_list_products(Product product)
         {
-                ListViewItem lvi = new ListViewItem
-                {
-                    Tag = product,
-                    Text = product.ToString()
+            ListViewItem lvi = new ListViewItem
+            {
+                Tag = product,
+                Text = product.ToString()
 
-                };
-                lvi.SubItems.Add(product.Trade_price.ToString());
-                lvi.SubItems.Add(product.Wholesale_price.ToString());
-                lvi.SubItems.Add(product._description.ToString());
-                listViewProduct.Items.Add(lvi);
+            };
+            lvi.SubItems.Add(product.Trade_price.ToString());
+            lvi.SubItems.Add(product.Wholesale_price.ToString());
+            lvi.SubItems.Add(product._description.ToString());
+            listViewProduct.Items.Add(lvi);
 
         }
 
@@ -165,11 +165,11 @@ namespace WinForm
         {
             ;
         }
-       /// <summary>
-       /// Метод обработки кнопки добавления нового покупателя
-       /// </summary>
-       /// <param name="sender"></param>
-       /// <param name="e"></param>
+        /// <summary>
+        /// Метод обработки кнопки добавления нового покупателя
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
         private void add_consumer_menuItem_Click(object sender, EventArgs e)
         {
             var consumer = new ClassFinalProduct.Сonsumer();
@@ -196,12 +196,12 @@ namespace WinForm
         {
             try
             {
-                var сonsumer = listConsumer.SelectedItems[0].Tag as ClassFinalProduct.Сonsumer;
+                var сonsumer = listViewConsumer.SelectedItems[0].Tag as ClassFinalProduct.Сonsumer;
                 _formConsumer.Сonsumer = сonsumer;
                 if (_formConsumer.ShowDialog() == DialogResult.OK)
                 {
-                    listConsumer.SelectedItems[0].Text = _formConsumer.Сonsumer._person.Name;
-                    var listViewItem = listConsumer.SelectedItems[0];
+                    listViewConsumer.SelectedItems[0].Text = _formConsumer.Сonsumer._person.Name;
+                    var listViewItem = listViewConsumer.SelectedItems[0];
                     listViewItem.Text = сonsumer._person.Name;
                     listViewItem.SubItems[1].Text = сonsumer._person.Last_Name;
                     listViewItem.SubItems[2].Text = сonsumer._number_phone.ToString();
@@ -218,17 +218,17 @@ namespace WinForm
         /// </summary>
         private void update_list_consumers(Сonsumer consumer)
         {
-           
-                ListViewItem lvi = new ListViewItem
 
-                {
-                    Tag = consumer,
-                    Text = consumer._person.Name
-                };
-                lvi.SubItems.Add(consumer._person.Last_Name);
-                lvi.SubItems.Add(consumer._number_phone.ToString());
-                lvi.SubItems.Add(consumer._address);
-                listConsumer.Items.Add(lvi);
+            ListViewItem lvi = new ListViewItem
+
+            {
+                Tag = consumer,
+                Text = consumer._person.Name
+            };
+            lvi.SubItems.Add(consumer._person.Last_Name);
+            lvi.SubItems.Add(consumer._number_phone.ToString());
+            lvi.SubItems.Add(consumer._address);
+            listViewConsumer.Items.Add(lvi);
         }
 
         private void add_deal_menu_Click(object sender, EventArgs e)
@@ -267,40 +267,63 @@ namespace WinForm
             }
             catch (Exception)
             {
-                MessageBox.Show("Не выбрана строка с поселением");
+                MessageBox.Show("Не выбрана строка с сделкой");
             }
         }
 
-        private void update_deal_list(Deal deal) 
+        private void update_deal_list(Deal deal)
         {
-    
-           ListViewItem lvi = new ListViewItem
+
+            ListViewItem lvi = new ListViewItem
             {
-              Tag = deal,
-              Text = deal._product.ToString()
+                Tag = deal,
+                Text = deal._product.ToString()
             };
-             lvi.SubItems.Add(deal._count.ToString());
-             lvi.SubItems.Add(deal._person.ToString());
-             lvi.SubItems.Add(deal._wholesale.ToString());
-             lvi.SubItems.Add(deal._time.ToString());
-             listViewDeal.Items.Add(lvi);
+            lvi.SubItems.Add(deal._count.ToString());
+            lvi.SubItems.Add(deal._person.ToString());
+            lvi.SubItems.Add(deal._wholesale.ToString());
+            lvi.SubItems.Add(deal._time.ToString());
+            listViewDeal.Items.Add(lvi);
         }
 
         private void listViewDeal_Remove(object sender, KeyEventArgs e)
+        {
+
+        }
+        private void listViewConsumer_Remove(object sender, KeyEventArgs e)
         {
             if (e.KeyCode == Keys.Delete)
             {
                 try
                 {
-                    var deal = listViewDeal.SelectedItems[0].Tag as Deal;
-                    if (deal != null)
+                    var consumer = listViewConsumer.SelectedItems[0].Tag as ClassFinalProduct.Сonsumer;
+                    if (consumer != null)
                     {
-                        _company.RemoveDeal(deal);
+                        _company.RemoveConsumer(consumer.UserId);
                     }
                 }
                 catch (Exception)
                 {
-                    MessageBox.Show("Не выбрана строка с поселением");
+                    MessageBox.Show("Не выбрана строка с покупателем");
+                }
+            }
+
+        }
+        private void listViewProduct_Remove(object sender, KeyEventArgs e)
+        {
+            if (e.KeyCode == Keys.Delete)
+            {
+                try
+                {
+                    var product = listViewProduct.SelectedItems[0].Tag as Product;
+                    if (product != null)
+                    {
+                        _company.RemoveProduct(product.ProductId);
+                    }
+                }
+                catch (Exception)
+                {
+                    MessageBox.Show("Не выбрана строка с товаром");
                 }
             }
         }

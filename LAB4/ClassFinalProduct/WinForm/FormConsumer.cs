@@ -26,13 +26,13 @@ namespace WinForm
         {
             InitializeComponent();
             _consumer = сonsumer;
-            if (_consumer.isValid)
+            if (_consumer.IsValid)
             {
                 Text = "Изменить покупателя";
-                input_name_customer.Text = _consumer._person.Name;
-                inpute_lastName.Text = _consumer._person.Last_Name;
-                phone_input.Text = _consumer._number_phone.ToString();
-                adrr_input.Text = _consumer._address;
+                inputNameNustomer.Text = _consumer.Person.Name;
+                inpute_lastName.Text = _consumer.Person.LastName;
+                phoneInput.Text = _consumer.NumberPhone.ToString();
+                adrrInput.Text = _consumer.Address;
             }
             else
                 Text = "Добавить покупателя";
@@ -42,10 +42,10 @@ namespace WinForm
         {
             try
             {
-                _consumer._number_phone = Convert.ToInt32(phone_input.Text);
-                _consumer._address = adrr_input.Text;
-                _consumer._person = new User(input_name_customer.Text, inpute_lastName.Text, Convert.ToInt32(Age_input.Value));
-                if (!_consumer.isValid)
+                _consumer.NumberPhone = Convert.ToInt32(phoneInput.Text);
+                _consumer.Address = adrrInput.Text;
+                _consumer.Person = new User(inputNameNustomer.Text, inpute_lastName.Text, Convert.ToInt32(ageInput.Value));
+                if (!_consumer.IsValid)
                 {
                     DialogResult = DialogResult.None;
                     MessageBox.Show("Неверные данные");

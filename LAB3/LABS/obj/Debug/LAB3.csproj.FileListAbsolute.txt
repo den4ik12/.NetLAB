@@ -8,3 +8,13 @@ D:\Институт\3 курс\.NET\LABS\LABS\LABS\obj\Debug\LAB3.csproj.Generat
 D:\Институт\3 курс\.NET\LABS\LABS\LABS\obj\Debug\LAB3.csproj.CoreCompileInputs.cache
 D:\Институт\3 курс\.NET\LABS\LABS\LABS\obj\Debug\LABS.exe
 D:\Институт\3 курс\.NET\LABS\LABS\LABS\obj\Debug\LABS.pdb
+D:\Институт\3 курс\.NET\LABS\.NetLAb\LAB3\LABS\bin\Debug\LABS.exe.config
+D:\Институт\3 курс\.NET\LABS\.NetLAb\LAB3\LABS\bin\Debug\LABS.exe
+D:\Институт\3 курс\.NET\LABS\.NetLAb\LAB3\LABS\bin\Debug\LABS.pdb
+D:\Институт\3 курс\.NET\LABS\.NetLAb\LAB3\LABS\obj\Debug\LAB3.csproj.AssemblyReference.cache
+D:\Институт\3 курс\.NET\LABS\.NetLAb\LAB3\LABS\obj\Debug\LABS.Form1.resources
+D:\Институт\3 курс\.NET\LABS\.NetLAb\LAB3\LABS\obj\Debug\LABS.Properties.Resources.resources
+D:\Институт\3 курс\.NET\LABS\.NetLAb\LAB3\LABS\obj\Debug\LAB3.csproj.GenerateResource.cache
+D:\Институт\3 курс\.NET\LABS\.NetLAb\LAB3\LABS\obj\Debug\LAB3.csproj.CoreCompileInputs.cache
+D:\Институт\3 курс\.NET\LABS\.NetLAb\LAB3\LABS\obj\Debug\LABS.exe
+D:\Институт\3 курс\.NET\LABS\.NetLAb\LAB3\LABS\obj\Debug\LABS.pdb

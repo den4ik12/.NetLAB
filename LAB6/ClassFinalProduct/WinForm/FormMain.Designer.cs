@@ -30,152 +30,155 @@ namespace WinForm
         private void InitializeComponent()
         {
             this.components = new System.ComponentModel.Container();
-            this.My_menu = new System.Windows.Forms.MenuStrip();
-            this.product_MenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.add_product_MenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.change_product_MenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.покупателиToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.add_consumer_menuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.change_consumer_menuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.сделкиToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.add_deal_menu = new System.Windows.Forms.ToolStripMenuItem();
-            this.change_deal_menu = new System.Windows.Forms.ToolStripMenuItem();
-            this.contextMenuStrip1 = new System.Windows.Forms.ContextMenuStrip(this.components);
-            this.tabControl_main = new System.Windows.Forms.TabControl();
+            this.MenuStripMy = new System.Windows.Forms.MenuStrip();
+            this.toolStripMenuItemProduct = new System.Windows.Forms.ToolStripMenuItem();
+            this.toolStripMenuItemAddProduct = new System.Windows.Forms.ToolStripMenuItem();
+            this.toolStripMenuItemChangeProduct = new System.Windows.Forms.ToolStripMenuItem();
+            this.toolStripMenuItemConsumer = new System.Windows.Forms.ToolStripMenuItem();
+            this.toolStripMenuItemAddConsumer = new System.Windows.Forms.ToolStripMenuItem();
+            this.toolStripMenuItemChangeConsumer = new System.Windows.Forms.ToolStripMenuItem();
+            this.toolStripMenuItemDeal = new System.Windows.Forms.ToolStripMenuItem();
+            this.ToolStripMenuItemAddDealMenu = new System.Windows.Forms.ToolStripMenuItem();
+            this.toolStripMenuItemChangeDealMenu = new System.Windows.Forms.ToolStripMenuItem();
+            this.contextMenuStrip = new System.Windows.Forms.ContextMenuStrip(this.components);
+            this.tabControlMain = new System.Windows.Forms.TabControl();
             this.tabPage1 = new System.Windows.Forms.TabPage();
             this.listViewProduct = new System.Windows.Forms.ListView();
-            this.cProductTitle = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
-            this.cWhosale = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
-            this.cTradeSale = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
-            this.cDescription = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
+            this.columnHeaderProductTitle = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
+            this.columnHeaderWhosale = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
+            this.columnHeaderTradeSale = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
+            this.columnHeaderDescription = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
             this.tabPageConsumers = new System.Windows.Forms.TabPage();
-            this.listConsumer = new System.Windows.Forms.ListView();
+            this.listViewConsumer = new System.Windows.Forms.ListView();
             this.columnNameConsumer = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
             this.columnLastNameConsumer = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
             this.columnPhoneConsumer = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
-            this.Addr = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
+            this.columnHeaderAddr = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
             this.tabPageDeal = new System.Windows.Forms.TabPage();
             this.listViewDeal = new System.Windows.Forms.ListView();
-            this.cProduct = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
-            this.cCountProduct = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
-            this.cConsumer = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
-            this.cWhosaleD = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
-            this.cTimeDeal = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
-            this.My_menu.SuspendLayout();
-            this.tabControl_main.SuspendLayout();
+            this.columnHeaderProduct = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
+            this.columnHeaderCountProduct = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
+            this.columnHeaderConsumer = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
+            this.columnHeaderWhosaleD = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
+            this.columnHeaderTimeDeal = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
+            this.MenuStripMy.SuspendLayout();
+            this.tabControlMain.SuspendLayout();
             this.tabPage1.SuspendLayout();
             this.tabPageConsumers.SuspendLayout();
             this.tabPageDeal.SuspendLayout();
             this.SuspendLayout();
             // 
-            // My_menu
+            // MenuStripMy
             // 
-            this.My_menu.Font = new System.Drawing.Font("Segoe UI", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.My_menu.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.product_MenuItem,
-            this.покупателиToolStripMenuItem,
-            this.сделкиToolStripMenuItem});
-            this.My_menu.Location = new System.Drawing.Point(0, 0);
-            this.My_menu.Name = "My_menu";
-            this.My_menu.Size = new System.Drawing.Size(690, 33);
-            this.My_menu.TabIndex = 0;
-            this.My_menu.Text = "menuStrip1";
+            this.MenuStripMy.Font = new System.Drawing.Font("Segoe UI", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.MenuStripMy.ImageScalingSize = new System.Drawing.Size(20, 20);
+            this.MenuStripMy.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.toolStripMenuItemProduct,
+            this.toolStripMenuItemConsumer,
+            this.toolStripMenuItemDeal});
+            this.MenuStripMy.Location = new System.Drawing.Point(0, 0);
+            this.MenuStripMy.Name = "MenuStripMy";
+            this.MenuStripMy.Size = new System.Drawing.Size(920, 40);
+            this.MenuStripMy.TabIndex = 0;
+            this.MenuStripMy.Text = "menuStrip1";
             // 
-            // product_MenuItem
+            // toolStripMenuItemProduct
             // 
-            this.product_MenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.add_product_MenuItem,
-            this.change_product_MenuItem});
-            this.product_MenuItem.Name = "product_MenuItem";
-            this.product_MenuItem.Size = new System.Drawing.Size(89, 29);
-            this.product_MenuItem.Text = "Товары";
+            this.toolStripMenuItemProduct.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.toolStripMenuItemAddProduct,
+            this.toolStripMenuItemChangeProduct});
+            this.toolStripMenuItemProduct.Name = "toolStripMenuItemProduct";
+            this.toolStripMenuItemProduct.Size = new System.Drawing.Size(112, 36);
+            this.toolStripMenuItemProduct.Text = "Товары";
             // 
-            // add_product_MenuItem
+            // toolStripMenuItemAddProduct
             // 
-            this.add_product_MenuItem.Name = "add_product_MenuItem";
-            this.add_product_MenuItem.Size = new System.Drawing.Size(213, 30);
-            this.add_product_MenuItem.Text = "Добавить";
-            this.add_product_MenuItem.Click += new System.EventHandler(this.add_product_MenuItem_Click);
+            this.toolStripMenuItemAddProduct.Name = "toolStripMenuItemAddProduct";
+            this.toolStripMenuItemAddProduct.Size = new System.Drawing.Size(266, 36);
+            this.toolStripMenuItemAddProduct.Text = "Добавить";
+            this.toolStripMenuItemAddProduct.Click += new System.EventHandler(this.add_product_MenuItem_Click);
             // 
-            // change_product_MenuItem
+            // toolStripMenuItemChangeProduct
             // 
-            this.change_product_MenuItem.Name = "change_product_MenuItem";
-            this.change_product_MenuItem.Size = new System.Drawing.Size(213, 30);
-            this.change_product_MenuItem.Text = "Редактировать";
-            this.change_product_MenuItem.Click += new System.EventHandler(this.change_product_MenuItem_Click);
+            this.toolStripMenuItemChangeProduct.Name = "toolStripMenuItemChangeProduct";
+            this.toolStripMenuItemChangeProduct.Size = new System.Drawing.Size(266, 36);
+            this.toolStripMenuItemChangeProduct.Text = "Редактировать";
+            this.toolStripMenuItemChangeProduct.Click += new System.EventHandler(this.change_product_MenuItem_Click);
             // 
-            // покупателиToolStripMenuItem
+            // toolStripMenuItemConsumer
             // 
-            this.покупателиToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.add_consumer_menuItem,
-            this.change_consumer_menuItem});
-            this.покупателиToolStripMenuItem.Name = "покупателиToolStripMenuItem";
-            this.покупателиToolStripMenuItem.Size = new System.Drawing.Size(127, 29);
-            this.покупателиToolStripMenuItem.Text = "Покупатели";
+            this.toolStripMenuItemConsumer.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.toolStripMenuItemAddConsumer,
+            this.toolStripMenuItemChangeConsumer});
+            this.toolStripMenuItemConsumer.Name = "toolStripMenuItemConsumer";
+            this.toolStripMenuItemConsumer.Size = new System.Drawing.Size(160, 36);
+            this.toolStripMenuItemConsumer.Text = "Покупатели";
             // 
-            // add_consumer_menuItem
+            // toolStripMenuItemAddConsumer
             // 
-            this.add_consumer_menuItem.Name = "add_consumer_menuItem";
-            this.add_consumer_menuItem.Size = new System.Drawing.Size(213, 30);
-            this.add_consumer_menuItem.Text = "Добавить";
-            this.add_consumer_menuItem.Click += new System.EventHandler(this.add_consumer_menuItem_Click);
+            this.toolStripMenuItemAddConsumer.Name = "toolStripMenuItemAddConsumer";
+            this.toolStripMenuItemAddConsumer.Size = new System.Drawing.Size(266, 36);
+            this.toolStripMenuItemAddConsumer.Text = "Добавить";
+            this.toolStripMenuItemAddConsumer.Click += new System.EventHandler(this.add_consumer_menuItem_Click);
             // 
-            // change_consumer_menuItem
+            // toolStripMenuItemChangeConsumer
             // 
-            this.change_consumer_menuItem.Name = "change_consumer_menuItem";
-            this.change_consumer_menuItem.Size = new System.Drawing.Size(213, 30);
-            this.change_consumer_menuItem.Text = "Редактировать";
-            this.change_consumer_menuItem.Click += new System.EventHandler(this.change_consumer_menuItem_Click);
+            this.toolStripMenuItemChangeConsumer.Name = "toolStripMenuItemChangeConsumer";
+            this.toolStripMenuItemChangeConsumer.Size = new System.Drawing.Size(266, 36);
+            this.toolStripMenuItemChangeConsumer.Text = "Редактировать";
+            this.toolStripMenuItemChangeConsumer.Click += new System.EventHandler(this.change_consumer_menuItem_Click);
             // 
-            // сделкиToolStripMenuItem
+            // toolStripMenuItemDeal
             // 
-            this.сделкиToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.add_deal_menu,
-            this.change_deal_menu});
-            this.сделкиToolStripMenuItem.Name = "сделкиToolStripMenuItem";
-            this.сделкиToolStripMenuItem.Size = new System.Drawing.Size(86, 29);
-            this.сделкиToolStripMenuItem.Text = "Сделки";
+            this.toolStripMenuItemDeal.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.ToolStripMenuItemAddDealMenu,
+            this.toolStripMenuItemChangeDealMenu});
+            this.toolStripMenuItemDeal.Name = "toolStripMenuItemDeal";
+            this.toolStripMenuItemDeal.Size = new System.Drawing.Size(109, 36);
+            this.toolStripMenuItemDeal.Text = "Сделки";
             // 
-            // add_deal_menu
+            // ToolStripMenuItemAddDealMenu
             // 
-            this.add_deal_menu.Name = "add_deal_menu";
-            this.add_deal_menu.Size = new System.Drawing.Size(213, 30);
-            this.add_deal_menu.Text = "Добавить";
-            this.add_deal_menu.Click += new System.EventHandler(this.add_deal_menu_Click);
+            this.ToolStripMenuItemAddDealMenu.Name = "ToolStripMenuItemAddDealMenu";
+            this.ToolStripMenuItemAddDealMenu.Size = new System.Drawing.Size(266, 36);
+            this.ToolStripMenuItemAddDealMenu.Text = "Добавить";
+            this.ToolStripMenuItemAddDealMenu.Click += new System.EventHandler(this.add_deal_menu_Click);
             // 
-            // change_deal_menu
+            // toolStripMenuItemChangeDealMenu
             // 
-            this.change_deal_menu.Name = "change_deal_menu";
-            this.change_deal_menu.Size = new System.Drawing.Size(213, 30);
-            this.change_deal_menu.Text = "Редактировать";
-            this.change_deal_menu.Click += new System.EventHandler(this.change_deal_menu_Click);
+            this.toolStripMenuItemChangeDealMenu.Name = "toolStripMenuItemChangeDealMenu";
+            this.toolStripMenuItemChangeDealMenu.Size = new System.Drawing.Size(266, 36);
+            this.toolStripMenuItemChangeDealMenu.Text = "Редактировать";
+            this.toolStripMenuItemChangeDealMenu.Click += new System.EventHandler(this.change_deal_menu_Click);
             // 
-            // contextMenuStrip1
+            // contextMenuStrip
             // 
-            this.contextMenuStrip1.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.contextMenuStrip1.Name = "contextMenuStrip1";
-            this.contextMenuStrip1.Size = new System.Drawing.Size(61, 4);
+            this.contextMenuStrip.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.contextMenuStrip.ImageScalingSize = new System.Drawing.Size(20, 20);
+            this.contextMenuStrip.Name = "contextMenuStrip1";
+            this.contextMenuStrip.Size = new System.Drawing.Size(211, 32);
             // 
-            // tabControl_main
+            // tabControlMain
             // 
-            this.tabControl_main.Controls.Add(this.tabPage1);
-            this.tabControl_main.Controls.Add(this.tabPageConsumers);
-            this.tabControl_main.Controls.Add(this.tabPageDeal);
-            this.tabControl_main.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.tabControl_main.Location = new System.Drawing.Point(0, 33);
-            this.tabControl_main.Name = "tabControl_main";
-            this.tabControl_main.SelectedIndex = 0;
-            this.tabControl_main.Size = new System.Drawing.Size(690, 417);
-            this.tabControl_main.TabIndex = 1;
-            this.tabControl_main.KeyUp += new System.Windows.Forms.KeyEventHandler(this.listViewDeal_Remove);
+            this.tabControlMain.Controls.Add(this.tabPage1);
+            this.tabControlMain.Controls.Add(this.tabPageConsumers);
+            this.tabControlMain.Controls.Add(this.tabPageDeal);
+            this.tabControlMain.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.tabControlMain.Location = new System.Drawing.Point(0, 40);
+            this.tabControlMain.Margin = new System.Windows.Forms.Padding(4);
+            this.tabControlMain.Name = "tabControlMain";
+            this.tabControlMain.SelectedIndex = 0;
+            this.tabControlMain.Size = new System.Drawing.Size(920, 514);
+            this.tabControlMain.TabIndex = 1;
             // 
             // tabPage1
             // 
             this.tabPage1.Controls.Add(this.listViewProduct);
-            this.tabPage1.Location = new System.Drawing.Point(4, 22);
+            this.tabPage1.Location = new System.Drawing.Point(4, 25);
+            this.tabPage1.Margin = new System.Windows.Forms.Padding(4);
             this.tabPage1.Name = "tabPage1";
-            this.tabPage1.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPage1.Size = new System.Drawing.Size(682, 391);
+            this.tabPage1.Padding = new System.Windows.Forms.Padding(4);
+            this.tabPage1.Size = new System.Drawing.Size(912, 485);
             this.tabPage1.TabIndex = 0;
             this.tabPage1.Text = "Товары";
             this.tabPage1.UseVisualStyleBackColor = true;
@@ -183,70 +186,75 @@ namespace WinForm
             // listViewProduct
             // 
             this.listViewProduct.Columns.AddRange(new System.Windows.Forms.ColumnHeader[] {
-            this.cProductTitle,
-            this.cWhosale,
-            this.cTradeSale,
-            this.cDescription});
+            this.columnHeaderProductTitle,
+            this.columnHeaderWhosale,
+            this.columnHeaderTradeSale,
+            this.columnHeaderDescription});
             this.listViewProduct.Dock = System.Windows.Forms.DockStyle.Fill;
             this.listViewProduct.FullRowSelect = true;
             this.listViewProduct.GridLines = true;
             this.listViewProduct.HideSelection = false;
-            this.listViewProduct.Location = new System.Drawing.Point(3, 3);
+            this.listViewProduct.Location = new System.Drawing.Point(4, 4);
+            this.listViewProduct.Margin = new System.Windows.Forms.Padding(4);
             this.listViewProduct.Name = "listViewProduct";
-            this.listViewProduct.Size = new System.Drawing.Size(676, 385);
+            this.listViewProduct.Size = new System.Drawing.Size(904, 477);
             this.listViewProduct.TabIndex = 0;
             this.listViewProduct.UseCompatibleStateImageBehavior = false;
             this.listViewProduct.View = System.Windows.Forms.View.Details;
+            this.listViewProduct.KeyUp += new System.Windows.Forms.KeyEventHandler(this.listViewProduct_Remove);
             // 
-            // cProductTitle
+            // columnHeaderProductTitle
             // 
-            this.cProductTitle.Tag = "";
-            this.cProductTitle.Text = "Название";
-            this.cProductTitle.Width = 234;
+            this.columnHeaderProductTitle.Tag = "";
+            this.columnHeaderProductTitle.Text = "Название";
+            this.columnHeaderProductTitle.Width = 234;
             // 
-            // cWhosale
+            // columnHeaderWhosale
             // 
-            this.cWhosale.Text = "Оптовая цена";
-            this.cWhosale.Width = 110;
+            this.columnHeaderWhosale.Text = "Оптовая цена";
+            this.columnHeaderWhosale.Width = 110;
             // 
-            // cTradeSale
+            // columnHeaderTradeSale
             // 
-            this.cTradeSale.Text = "Рыночная цена";
-            this.cTradeSale.Width = 110;
+            this.columnHeaderTradeSale.Text = "Рыночная цена";
+            this.columnHeaderTradeSale.Width = 110;
             // 
-            // cDescription
+            // columnHeaderDescription
             // 
-            this.cDescription.Text = "Описание";
-            this.cDescription.Width = 220;
+            this.columnHeaderDescription.Text = "Описание";
+            this.columnHeaderDescription.Width = 220;
             // 
             // tabPageConsumers
             // 
-            this.tabPageConsumers.Controls.Add(this.listConsumer);
-            this.tabPageConsumers.Location = new System.Drawing.Point(4, 22);
+            this.tabPageConsumers.Controls.Add(this.listViewConsumer);
+            this.tabPageConsumers.Location = new System.Drawing.Point(4, 25);
+            this.tabPageConsumers.Margin = new System.Windows.Forms.Padding(4);
             this.tabPageConsumers.Name = "tabPageConsumers";
-            this.tabPageConsumers.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPageConsumers.Size = new System.Drawing.Size(682, 391);
+            this.tabPageConsumers.Padding = new System.Windows.Forms.Padding(4);
+            this.tabPageConsumers.Size = new System.Drawing.Size(912, 485);
             this.tabPageConsumers.TabIndex = 1;
             this.tabPageConsumers.Text = "Покупатели";
             this.tabPageConsumers.UseVisualStyleBackColor = true;
             // 
-            // listConsumer
+            // listViewConsumer
             // 
-            this.listConsumer.Columns.AddRange(new System.Windows.Forms.ColumnHeader[] {
+            this.listViewConsumer.Columns.AddRange(new System.Windows.Forms.ColumnHeader[] {
             this.columnNameConsumer,
             this.columnLastNameConsumer,
             this.columnPhoneConsumer,
-            this.Addr});
-            this.listConsumer.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.listConsumer.FullRowSelect = true;
-            this.listConsumer.GridLines = true;
-            this.listConsumer.HideSelection = false;
-            this.listConsumer.Location = new System.Drawing.Point(3, 3);
-            this.listConsumer.Name = "listConsumer";
-            this.listConsumer.Size = new System.Drawing.Size(676, 385);
-            this.listConsumer.TabIndex = 0;
-            this.listConsumer.UseCompatibleStateImageBehavior = false;
-            this.listConsumer.View = System.Windows.Forms.View.Details;
+            this.columnHeaderAddr});
+            this.listViewConsumer.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.listViewConsumer.FullRowSelect = true;
+            this.listViewConsumer.GridLines = true;
+            this.listViewConsumer.HideSelection = false;
+            this.listViewConsumer.Location = new System.Drawing.Point(4, 4);
+            this.listViewConsumer.Margin = new System.Windows.Forms.Padding(4);
+            this.listViewConsumer.Name = "listViewConsumer";
+            this.listViewConsumer.Size = new System.Drawing.Size(904, 477);
+            this.listViewConsumer.TabIndex = 0;
+            this.listViewConsumer.UseCompatibleStateImageBehavior = false;
+            this.listViewConsumer.View = System.Windows.Forms.View.Details;
+            this.listViewConsumer.KeyUp += new System.Windows.Forms.KeyEventHandler(this.listViewConsumer_Remove);
             // 
             // columnNameConsumer
             // 
@@ -263,18 +271,19 @@ namespace WinForm
             this.columnPhoneConsumer.Text = "Телефон";
             this.columnPhoneConsumer.Width = 110;
             // 
-            // Addr
+            // columnHeaderAddr
             // 
-            this.Addr.Text = "Адрес";
-            this.Addr.Width = 100;
+            this.columnHeaderAddr.Text = "Адрес";
+            this.columnHeaderAddr.Width = 100;
             // 
             // tabPageDeal
             // 
             this.tabPageDeal.Controls.Add(this.listViewDeal);
-            this.tabPageDeal.Location = new System.Drawing.Point(4, 22);
+            this.tabPageDeal.Location = new System.Drawing.Point(4, 25);
+            this.tabPageDeal.Margin = new System.Windows.Forms.Padding(4);
             this.tabPageDeal.Name = "tabPageDeal";
-            this.tabPageDeal.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPageDeal.Size = new System.Drawing.Size(682, 391);
+            this.tabPageDeal.Padding = new System.Windows.Forms.Padding(4);
+            this.tabPageDeal.Size = new System.Drawing.Size(912, 485);
             this.tabPageDeal.TabIndex = 2;
             this.tabPageDeal.Text = "Сделка";
             this.tabPageDeal.UseVisualStyleBackColor = true;
@@ -282,64 +291,67 @@ namespace WinForm
             // listViewDeal
             // 
             this.listViewDeal.Columns.AddRange(new System.Windows.Forms.ColumnHeader[] {
-            this.cProduct,
-            this.cCountProduct,
-            this.cConsumer,
-            this.cWhosaleD,
-            this.cTimeDeal});
+            this.columnHeaderProduct,
+            this.columnHeaderCountProduct,
+            this.columnHeaderConsumer,
+            this.columnHeaderWhosaleD,
+            this.columnHeaderTimeDeal});
             this.listViewDeal.Dock = System.Windows.Forms.DockStyle.Fill;
             this.listViewDeal.FullRowSelect = true;
             this.listViewDeal.GridLines = true;
             this.listViewDeal.HideSelection = false;
-            this.listViewDeal.Location = new System.Drawing.Point(3, 3);
+            this.listViewDeal.Location = new System.Drawing.Point(4, 4);
+            this.listViewDeal.Margin = new System.Windows.Forms.Padding(4);
             this.listViewDeal.Name = "listViewDeal";
-            this.listViewDeal.Size = new System.Drawing.Size(676, 385);
+            this.listViewDeal.Size = new System.Drawing.Size(904, 477);
             this.listViewDeal.TabIndex = 0;
             this.listViewDeal.UseCompatibleStateImageBehavior = false;
             this.listViewDeal.View = System.Windows.Forms.View.Details;
+            this.listViewDeal.KeyUp += new System.Windows.Forms.KeyEventHandler(this.listViewDeal_Remove);
             // 
-            // cProduct
+            // columnHeaderProduct
             // 
-            this.cProduct.Text = "Товар";
-            this.cProduct.Width = 150;
+            this.columnHeaderProduct.Text = "Товар";
+            this.columnHeaderProduct.Width = 150;
             // 
-            // cCountProduct
+            // columnHeaderCountProduct
             // 
-            this.cCountProduct.Text = "Количество";
-            this.cCountProduct.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
-            this.cCountProduct.Width = 75;
+            this.columnHeaderCountProduct.Text = "Количество";
+            this.columnHeaderCountProduct.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.columnHeaderCountProduct.Width = 75;
             // 
-            // cConsumer
+            // columnHeaderConsumer
             // 
-            this.cConsumer.Text = "Покупатель";
-            this.cConsumer.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
-            this.cConsumer.Width = 90;
+            this.columnHeaderConsumer.Text = "Покупатель";
+            this.columnHeaderConsumer.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.columnHeaderConsumer.Width = 90;
             // 
-            // cWhosaleD
+            // columnHeaderWhosaleD
             // 
-            this.cWhosaleD.Text = "Оптовая продажа";
-            this.cWhosaleD.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
-            this.cWhosaleD.Width = 110;
+            this.columnHeaderWhosaleD.Text = "Оптовая продажа";
+            this.columnHeaderWhosaleD.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.columnHeaderWhosaleD.Width = 110;
             // 
-            // cTimeDeal
+            // columnHeaderTimeDeal
             // 
-            this.cTimeDeal.Text = "Дата сделки";
-            this.cTimeDeal.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
-            this.cTimeDeal.Width = 110;
+            this.columnHeaderTimeDeal.Text = "Дата сделки";
+            this.columnHeaderTimeDeal.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.columnHeaderTimeDeal.Width = 110;
             // 
             // FormMain
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(690, 450);
-            this.Controls.Add(this.tabControl_main);
-            this.Controls.Add(this.My_menu);
-            this.MainMenuStrip = this.My_menu;
+            this.ClientSize = new System.Drawing.Size(920, 554);
+            this.Controls.Add(this.tabControlMain);
+            this.Controls.Add(this.MenuStripMy);
+            this.MainMenuStrip = this.MenuStripMy;
+            this.Margin = new System.Windows.Forms.Padding(4);
             this.Name = "FormMain";
             this.Text = "CRM фирмы";
-            this.My_menu.ResumeLayout(false);
-            this.My_menu.PerformLayout();
-            this.tabControl_main.ResumeLayout(false);
+            this.MenuStripMy.ResumeLayout(false);
+            this.MenuStripMy.PerformLayout();
+            this.tabControlMain.ResumeLayout(false);
             this.tabPage1.ResumeLayout(false);
             this.tabPageConsumers.ResumeLayout(false);
             this.tabPageDeal.ResumeLayout(false);
@@ -350,37 +362,37 @@ namespace WinForm
 
         #endregion
 
-        private System.Windows.Forms.MenuStrip My_menu;
-        private System.Windows.Forms.ToolStripMenuItem product_MenuItem;
-        private System.Windows.Forms.ToolStripMenuItem add_product_MenuItem;
-        private System.Windows.Forms.ToolStripMenuItem change_product_MenuItem;
-        private System.Windows.Forms.ToolStripMenuItem покупателиToolStripMenuItem;
-        private System.Windows.Forms.ToolStripMenuItem add_consumer_menuItem;
-        private System.Windows.Forms.ToolStripMenuItem change_consumer_menuItem;
-        private System.Windows.Forms.ToolStripMenuItem сделкиToolStripMenuItem;
-        private System.Windows.Forms.ToolStripMenuItem add_deal_menu;
-        private System.Windows.Forms.ToolStripMenuItem change_deal_menu;
-        private System.Windows.Forms.ContextMenuStrip contextMenuStrip1;
-        private System.Windows.Forms.TabControl tabControl_main;
+        private System.Windows.Forms.MenuStrip MenuStripMy;
+        private System.Windows.Forms.ToolStripMenuItem toolStripMenuItemProduct;
+        private System.Windows.Forms.ToolStripMenuItem toolStripMenuItemAddProduct;
+        private System.Windows.Forms.ToolStripMenuItem toolStripMenuItemChangeProduct;
+        private System.Windows.Forms.ToolStripMenuItem toolStripMenuItemConsumer;
+        private System.Windows.Forms.ToolStripMenuItem toolStripMenuItemAddConsumer;
+        private System.Windows.Forms.ToolStripMenuItem toolStripMenuItemChangeConsumer;
+        private System.Windows.Forms.ToolStripMenuItem toolStripMenuItemDeal;
+        private System.Windows.Forms.ToolStripMenuItem ToolStripMenuItemAddDealMenu;
+        private System.Windows.Forms.ToolStripMenuItem toolStripMenuItemChangeDealMenu;
+        private System.Windows.Forms.ContextMenuStrip contextMenuStrip;
+        private System.Windows.Forms.TabControl tabControlMain;
         private System.Windows.Forms.TabPage tabPage1;
         private System.Windows.Forms.ListView listViewProduct;
-        private System.Windows.Forms.ColumnHeader cProductTitle;
+        private System.Windows.Forms.ColumnHeader columnHeaderProductTitle;
         private System.Windows.Forms.TabPage tabPageConsumers;
         private System.Windows.Forms.TabPage tabPageDeal;
-        private System.Windows.Forms.ListView listConsumer;
+        private System.Windows.Forms.ListView listViewConsumer;
         private System.Windows.Forms.ColumnHeader columnNameConsumer;
         private System.Windows.Forms.ColumnHeader columnLastNameConsumer;
         private System.Windows.Forms.ColumnHeader columnPhoneConsumer;
-        private System.Windows.Forms.ColumnHeader Addr;
-        private System.Windows.Forms.ColumnHeader cWhosale;
-        private System.Windows.Forms.ColumnHeader cTradeSale;
-        private System.Windows.Forms.ColumnHeader cDescription;
+        private System.Windows.Forms.ColumnHeader columnHeaderAddr;
+        private System.Windows.Forms.ColumnHeader columnHeaderWhosale;
+        private System.Windows.Forms.ColumnHeader columnHeaderTradeSale;
+        private System.Windows.Forms.ColumnHeader columnHeaderDescription;
         private System.Windows.Forms.ListView listViewDeal;
-        private System.Windows.Forms.ColumnHeader cProduct;
-        private System.Windows.Forms.ColumnHeader cCountProduct;
-        private System.Windows.Forms.ColumnHeader cConsumer;
-        private System.Windows.Forms.ColumnHeader cWhosaleD;
-        private System.Windows.Forms.ColumnHeader cTimeDeal;
+        private System.Windows.Forms.ColumnHeader columnHeaderProduct;
+        private System.Windows.Forms.ColumnHeader columnHeaderCountProduct;
+        private System.Windows.Forms.ColumnHeader columnHeaderConsumer;
+        private System.Windows.Forms.ColumnHeader columnHeaderWhosaleD;
+        private System.Windows.Forms.ColumnHeader columnHeaderTimeDeal;
     }
 }
 

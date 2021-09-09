@@ -7,36 +7,36 @@ namespace ClassFinalProduct
     /// </summary>
     public class Deal : IValidatable
     {
-        public DateTime _time { get; set; } //Время сделки
-        public  Product _product { get; set; } //Товар
-        public int _count { get; set; } //Количество товара
-        public Сonsumer _person { get; set; } //Покупатель
-        public bool _wholesale { get; set; } //Признак оптовой продажи
+        public DateTime Time { get; set; } //Время сделки
+        public  Product Productt { get; set; } //Товар
+        public int Count { get; set; } //Количество товара
+        public Сonsumer Person { get; set; } //Покупатель
+        public bool Wholesale { get; set; } //Признак оптовой продажи
         public Deal() { }
         public Deal(DateTime time, Product product, int count, Сonsumer person, bool wholesale)
         {
-            _time = time;
-            _product = product;
-            _count = count;
-            _person = person;
-            _wholesale = wholesale;
+            Time = time;
+            Productt = product;
+            Count = count;
+            Person = person;
+            Wholesale = wholesale;
         }
 
         public override string ToString()
         {
-            return $"Товар: {_product}\n" +
-                $"Количество: {_count}\n" +
-                $"Покупатель: {_person}\n" +
-                $"Оптовая продажа: {_wholesale}\n" +
-                $"Время заказа: {_time}\n" +
-                $"Состояние сделки: {isValid}";
+            return $"Товар: {Productt}\n" +
+                $"Количество: {Count}\n" +
+                $"Покупатель: {Person}\n" +
+                $"Оптовая продажа: {Wholesale}\n" +
+                $"Время заказа: {Time}\n" +
+                $"Состояние сделки: {IsValid}";
         }
 
-        public bool isValid //Если товар и покупатель валидны, то и сделка валидна
+        public bool IsValid //Если товар и покупатель валидны, то и сделка валидна
         {
             get
             {
-                if (_product.isValid && _person.isValid)
+                if (Productt.IsValid && Person.IsValid)
                     return true;
                 else
                     return false;

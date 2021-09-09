@@ -1,53 +1,47 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-
-namespace ClassFinalProduct
+﻿namespace ClassFinalProduct
 {
     /// <summary>
     /// Класс хранящий информацию о товаре
     /// </summary>
     public class Product : IValidatable
     {
-        public string _title { get; set; } //название
+        public string Title { get; set; } //название
 
-        private decimal _wholesale_price = -1; //оптовая цена
+        private decimal _wholesalePrice = -1; //оптовая цена
 
-        private decimal _trade_price = -1; //рыночная цена
-        public decimal Wholesale_price
+        private decimal _tradePrice = -1; //рыночная цена
+        public decimal WholesaPrice //WholesalePrice
         { 
             get 
             { 
-                return _wholesale_price; 
-            }
+                return _wholesalePrice; 
+            } 
             set 
             {
                 if (value > 0)
-                    _wholesale_price = value;
+                    _wholesalePrice = value;
                
             }
         } //свойство оптовой цены, включает проверку на ввод
-        public decimal Trade_price 
+        public decimal TradePrice 
         { 
             get 
             {
-                return _trade_price;
+                return _tradePrice;
             }
             set 
             {   
                 if (value > 0)
-                    _trade_price = value;
+                    _tradePrice = value;
                 }
         }   //свойство рыночной цены, включает проверку на ввод
 
-        public string _description { get; set; } //описание
-        public bool isValid //если все поля корректно заполнены, то валид
+        public string Description { get; set; } //описание
+        public bool IsValid //если все поля корректно заполнены, то валид
         {
             get
             {
-                if (_title != null && _wholesale_price!= -1 && _trade_price != -1 && _description != null)
+                if (Title != null && _wholesalePrice!= -1 && _tradePrice != -1 && Description != null)
                     return true;
                 else
                 {
@@ -62,15 +56,15 @@ namespace ClassFinalProduct
         }
         public Product(string title, decimal wholosale_price, decimal trade_price, string description)
         {
-            _title = title;
-            Wholesale_price = wholosale_price;
-            Trade_price = trade_price;
-            _description = description;
+            Title = title;
+            WholesaPrice = wholosale_price;
+            TradePrice = trade_price;
+            Description = description;
         }
 
         public override string ToString()
         {
-            return $"{_title}";
+            return $"{Title}";
         } //вывод названия товара
     }
 }

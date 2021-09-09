@@ -12,24 +12,24 @@ namespace ClassFinalProduct
     public class User: IValidatable
     {
         public string Name { get; set; } 
-        public string Last_Name { get; set; } 
+        public string LastName { get; set; } 
         public int Age { get; set; } = 0;
         public User(string name, string last_name, int age)
         {
             Name = name;
-            Last_Name = last_name;
+            LastName = last_name;
             Age = age;
         }
         public override string ToString()
         {
-            return $"{Name} {Last_Name}";
+            return $"{Name} {LastName}";
         }
 
-        public bool isValid //если имя, фамилие и возраст указаны, то валидный объект
+        public bool IsValid //если имя, фамилие и возраст указаны, то валидный объект
         {
             get
             {
-                if (Name != "" && Last_Name != "" && Age!=0)
+                if (Name != "" && LastName != "" && Age!=0)
                     return true;
                 else
                     return false;

@@ -33,12 +33,12 @@ namespace WinForm
         private void _company_ProductRemoved(object sender, EventArgs e)
         {
             int key = (int)sender;
-            for (int i = 0; i < comboBox_product.Items.Count; i++)
+            for (int i = 0; i < comboBoxProduct.Items.Count; i++)
             {
-                var product = comboBox_product.Items[i] as Product;
+                var product = comboBoxProduct.Items[i] as Product;
                 if (product?.ProductId == key)
                 {
-                    comboBox_product.Items.RemoveAt(i);
+                    comboBoxProduct.Items.RemoveAt(i);
                     break;
                 }
             }
@@ -46,18 +46,18 @@ namespace WinForm
 
         private void _company_ProductAdded(object sender, EventArgs e)
         {
-            comboBox_product.Items.Add(sender);
+            comboBoxProduct.Items.Add(sender);
         }
 
         private void _company_ConsumerRemoved(object sender, EventArgs e)
         {
             int key = (int)sender;
-            for (int i = 0; i < comboBox_consumer.Items.Count; i++)
+            for (int i = 0; i < comboBoxConsumer.Items.Count; i++)
             {
-                var consumer = comboBox_consumer.Items[i] as ClassFinalProduct.Сonsumer;
+                var consumer = comboBoxConsumer.Items[i] as ClassFinalProduct.Сonsumer;
                 if (consumer?.UserId == key)
                 {
-                    comboBox_consumer.Items.RemoveAt(i);
+                    comboBoxConsumer.Items.RemoveAt(i);
                     break;
                 }
             }
@@ -65,52 +65,52 @@ namespace WinForm
 
         private void _company_ConsumerAdded(object sender, EventArgs e)
         {
-            comboBox_consumer.Items.Add(sender);
+            comboBoxConsumer.Items.Add(sender);
         }
 
         private void fill_comboBox()
         {
             foreach (var product in _company.Products)
-                comboBox_product.Items.Add(product);
+                comboBoxProduct.Items.Add(product);
 
             foreach (var consumer in _company.Consumers)
-                comboBox_consumer.Items.Add(consumer);
+                comboBoxConsumer.Items.Add(consumer);
         }
         private void set_deal_config()
         {
-            comboBox_product.SelectedItem = _deal._product;
-            comboBox_consumer.SelectedItem = _deal._person;
+            comboBoxProduct.SelectedItem = _deal._product;
+            comboBoxConsumer.SelectedItem = _deal._person;
             
 
-            dateTimePicker_deal.Value = _deal._time;
-            checkBox_wholesale.Checked = _deal._wholesale;
+            dateTimePickerDeal.Value = _deal._time;
+            checkBoxWholesale.Checked = _deal._wholesale;
             if (!_deal._wholesale){
-                numericUpDown_count_product.Minimum = 1;
+                numericUpDownCountProduct.Minimum = 1;
             }
-            numericUpDown_count_product.Value = _deal._count;
+            numericUpDownCountProduct.Value = _deal._count;
         }
         private void button_save_deal_Click(object sender, EventArgs e)
         {
-            _deal._product = comboBox_product.SelectedItem as Product;
-            _deal._person = comboBox_consumer.SelectedItem as ClassFinalProduct.Сonsumer;
-            _deal._count = Convert.ToInt32(numericUpDown_count_product.Value);
-            _deal._time = dateTimePicker_deal.Value;
-            _deal._wholesale = checkBox_wholesale.Checked;
+            _deal._product = comboBoxProduct.SelectedItem as Product;
+            _deal._person = comboBoxConsumer.SelectedItem as ClassFinalProduct.Сonsumer;
+            _deal._count = Convert.ToInt32(numericUpDownCountProduct.Value);
+            _deal._time = dateTimePickerDeal.Value;
+            _deal._wholesale = checkBoxWholesale.Checked;
             DialogResult = DialogResult.OK;
 
         }
 
         private void checkBox_wholesale_CheckedChanged(object sender, EventArgs e)
         {
-            if (checkBox_wholesale.Checked)
+            if (checkBoxWholesale.Checked)
                 set_checkbox(500, 10000);
             else
                 set_checkbox(1, 100);
         }
         private void set_checkbox(int min, int max) 
             {
-                numericUpDown_count_product.Minimum = min;
-                numericUpDown_count_product.Maximum = max;
+                numericUpDownCountProduct.Minimum = min;
+                numericUpDownCountProduct.Maximum = max;
             }
 
     }

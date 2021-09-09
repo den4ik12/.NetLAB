@@ -25,19 +25,19 @@ namespace WinForm
         {
             InitializeComponent();
             _product = product;
-            if (!_product.isValid)
+            if (!_product.IsValid)
             {
-                h1_title_form_product.Text = "Добавить товар";
+                h1TitleFormProduct.Text = "Добавить товар";
                 Text = "Добавить товар";
             }
             else
             {
                 Text = "Редактировать товар";
-                h1_title_form_product.Text = "Редактировать товар";
-                textBox_title_product.Text = _product._title;
-                textBox_trade_price.Text = _product.Trade_price.ToString();
-                textBox_whosale_price.Text = _product.Wholesale_price.ToString();
-                description_product.Text = _product._description;
+                h1TitleFormProduct.Text = "Редактировать товар";
+                textBoxTitleProduct.Text = _product.Title;
+                textBoxTradePrice.Text = _product.TradePrice.ToString();
+                textBoxWhosalePrice.Text = _product.WholesaPrice.ToString();
+                descriptionProduct.Text = _product.Description;
             }
         }
 
@@ -45,11 +45,11 @@ namespace WinForm
         {
             try
             {
-                _product._title = textBox_title_product.Text;
-                _product.Trade_price = Convert.ToDecimal(textBox_trade_price.Text);
-                _product.Wholesale_price = Convert.ToDecimal(textBox_whosale_price.Text);
-                _product._description = description_product.Text;
-                if (!_product.isValid)
+                _product.Title = textBoxTitleProduct.Text;
+                _product.TradePrice = Convert.ToDecimal(textBoxTradePrice.Text);
+                _product.WholesaPrice = Convert.ToDecimal(textBoxWhosalePrice.Text);
+                _product.Description = descriptionProduct.Text;
+                if (!_product.IsValid)
                 {
                     MessageBox.Show("Неверный параметр");
                     DialogResult = DialogResult.None;
