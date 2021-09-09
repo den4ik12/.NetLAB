@@ -1,0 +1,11 @@
+D:\Институт\.NET\Lab1\MyFormLab1\bin\Debug\MyFormLab1.exe.config
+D:\Институт\.NET\Lab1\MyFormLab1\bin\Debug\MyFormLab1.exe
+D:\Институт\.NET\Lab1\MyFormLab1\bin\Debug\MyFormLab1.pdb
+D:\Институт\.NET\Lab1\MyFormLab1\obj\Debug\MyFormLab1.csproj.AssemblyReference.cache
+D:\Институт\.NET\Lab1\MyFormLab1\obj\Debug\MyFormLab1.Form1.resources
+D:\Институт\.NET\Lab1\MyFormLab1\obj\Debug\MyFormLab1.Properties.Resources.resources
+D:\Институт\.NET\Lab1\MyFormLab1\obj\Debug\MyFormLab1.csproj.GenerateResource.cache
+D:\Институт\.NET\Lab1\MyFormLab1\obj\Debug\MyFormLab1.csproj.CoreCompileInputs.cache
+D:\Институт\.NET\Lab1\MyFormLab1\obj\Debug\MyFormLab1.exe
+D:\Институт\.NET\Lab1\MyFormLab1\obj\Debug\MyFormLab1.pdb
+D:\Институт\.NET\Lab1\MyFormLab1\obj\Debug\MyFormLab1.Primer.resources
