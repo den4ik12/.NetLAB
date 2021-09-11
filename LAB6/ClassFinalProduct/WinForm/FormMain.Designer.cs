@@ -96,14 +96,14 @@ namespace WinForm
             this.toolStripMenuItemAddProduct.Name = "toolStripMenuItemAddProduct";
             this.toolStripMenuItemAddProduct.Size = new System.Drawing.Size(266, 36);
             this.toolStripMenuItemAddProduct.Text = "Добавить";
-            this.toolStripMenuItemAddProduct.Click += new System.EventHandler(this.add_product_MenuItem_Click);
+            this.toolStripMenuItemAddProduct.Click += new System.EventHandler(this.Add_product_MenuItem_Click);
             // 
             // toolStripMenuItemChangeProduct
             // 
             this.toolStripMenuItemChangeProduct.Name = "toolStripMenuItemChangeProduct";
             this.toolStripMenuItemChangeProduct.Size = new System.Drawing.Size(266, 36);
             this.toolStripMenuItemChangeProduct.Text = "Редактировать";
-            this.toolStripMenuItemChangeProduct.Click += new System.EventHandler(this.change_product_MenuItem_Click);
+            this.toolStripMenuItemChangeProduct.Click += new System.EventHandler(this.Change_product_MenuItem_Click);
             // 
             // toolStripMenuItemConsumer
             // 
@@ -119,14 +119,14 @@ namespace WinForm
             this.toolStripMenuItemAddConsumer.Name = "toolStripMenuItemAddConsumer";
             this.toolStripMenuItemAddConsumer.Size = new System.Drawing.Size(266, 36);
             this.toolStripMenuItemAddConsumer.Text = "Добавить";
-            this.toolStripMenuItemAddConsumer.Click += new System.EventHandler(this.add_consumer_menuItem_Click);
+            this.toolStripMenuItemAddConsumer.Click += new System.EventHandler(this.Add_consumer_menuItem_Click);
             // 
             // toolStripMenuItemChangeConsumer
             // 
             this.toolStripMenuItemChangeConsumer.Name = "toolStripMenuItemChangeConsumer";
             this.toolStripMenuItemChangeConsumer.Size = new System.Drawing.Size(266, 36);
             this.toolStripMenuItemChangeConsumer.Text = "Редактировать";
-            this.toolStripMenuItemChangeConsumer.Click += new System.EventHandler(this.change_consumer_menuItem_Click);
+            this.toolStripMenuItemChangeConsumer.Click += new System.EventHandler(this.Change_consumer_menuItem_Click);
             // 
             // toolStripMenuItemDeal
             // 
@@ -142,14 +142,14 @@ namespace WinForm
             this.ToolStripMenuItemAddDealMenu.Name = "ToolStripMenuItemAddDealMenu";
             this.ToolStripMenuItemAddDealMenu.Size = new System.Drawing.Size(266, 36);
             this.ToolStripMenuItemAddDealMenu.Text = "Добавить";
-            this.ToolStripMenuItemAddDealMenu.Click += new System.EventHandler(this.add_deal_menu_Click);
+            this.ToolStripMenuItemAddDealMenu.Click += new System.EventHandler(this.Add_deal_menu_Click);
             // 
             // toolStripMenuItemChangeDealMenu
             // 
             this.toolStripMenuItemChangeDealMenu.Name = "toolStripMenuItemChangeDealMenu";
             this.toolStripMenuItemChangeDealMenu.Size = new System.Drawing.Size(266, 36);
             this.toolStripMenuItemChangeDealMenu.Text = "Редактировать";
-            this.toolStripMenuItemChangeDealMenu.Click += new System.EventHandler(this.change_deal_menu_Click);
+            this.toolStripMenuItemChangeDealMenu.Click += new System.EventHandler(this.Change_deal_menu_Click);
             // 
             // contextMenuStrip
             // 
@@ -201,7 +201,7 @@ namespace WinForm
             this.listViewProduct.TabIndex = 0;
             this.listViewProduct.UseCompatibleStateImageBehavior = false;
             this.listViewProduct.View = System.Windows.Forms.View.Details;
-            this.listViewProduct.KeyUp += new System.Windows.Forms.KeyEventHandler(this.listViewProduct_Remove);
+            this.listViewProduct.KeyUp += new System.Windows.Forms.KeyEventHandler(this.ListViewProduct_Remove);
             // 
             // columnHeaderProductTitle
             // 
@@ -254,7 +254,7 @@ namespace WinForm
             this.listViewConsumer.TabIndex = 0;
             this.listViewConsumer.UseCompatibleStateImageBehavior = false;
             this.listViewConsumer.View = System.Windows.Forms.View.Details;
-            this.listViewConsumer.KeyUp += new System.Windows.Forms.KeyEventHandler(this.listViewConsumer_Remove);
+            this.listViewConsumer.KeyUp += new System.Windows.Forms.KeyEventHandler(this.ListViewConsumer_Remove);
             // 
             // columnNameConsumer
             // 
@@ -307,7 +307,6 @@ namespace WinForm
             this.listViewDeal.TabIndex = 0;
             this.listViewDeal.UseCompatibleStateImageBehavior = false;
             this.listViewDeal.View = System.Windows.Forms.View.Details;
-            this.listViewDeal.KeyUp += new System.Windows.Forms.KeyEventHandler(this.listViewDeal_Remove);
             // 
             // columnHeaderProduct
             // 

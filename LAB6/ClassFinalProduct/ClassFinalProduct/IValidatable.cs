@@ -8,6 +8,6 @@ namespace ClassFinalProduct
 {
     interface IValidatable
     {
-        bool isValid { get; }
+        bool IsValid { get; }
     }
 }

@@ -14,11 +14,11 @@ namespace WinForm
             {
                 _consumer = value;
 
-                input_name_customer.Text = _consumer._person.Name;
-                Age_input.Value = _consumer._person.Age;
-                inpute_lastName.Text = _consumer._person.Last_Name;
-                phone_input.Text = _consumer._number_phone.ToString();
-                adrr_input.Text = _consumer._address;
+                textBoxNameCustomer.Text = _consumer.Person.Name;
+                numericUpDownAge.Value = _consumer.Person.Age;
+                textBoxLastName.Text = _consumer.Person.LastName;
+                textBoxPhone.Text = _consumer.NumberPhone.ToString();
+                textBoxAdrrInput.Text = _consumer.Address;
             }
         }
         public FormConsumer()
@@ -26,19 +26,19 @@ namespace WinForm
             InitializeComponent();
         }
 
-        private void save_customer_Click(object sender, EventArgs e)
+        private void Save_customer_Click(object sender, EventArgs e)
         {
             try
             {
-                _consumer._number_phone = Convert.ToInt32(phone_input.Text);
+                _consumer.NumberPhone = Convert.ToInt32(textBoxPhone.Text);
                 DialogResult = DialogResult.OK;
             }
             catch (Exception) {
                 DialogResult = DialogResult.None;
                 MessageBox.Show("Неверные данные");
             }
-            _consumer._address = adrr_input.Text;
-            _consumer._person = new User(input_name_customer.Text, inpute_lastName.Text, Convert.ToInt32(Age_input.Value));
+            _consumer.Address = textBoxAdrrInput.Text;
+            _consumer.Person = new User(textBoxNameCustomer.Text, textBoxLastName.Text, Convert.ToInt32(numericUpDownAge.Value));
         }
 
     }

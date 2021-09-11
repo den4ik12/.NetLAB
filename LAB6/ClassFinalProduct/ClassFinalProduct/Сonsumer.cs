@@ -1,10 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-
-namespace ClassFinalProduct
+﻿namespace ClassFinalProduct
 {
     /// <summary>
     /// /// Клиент (покупатель)
@@ -14,55 +8,55 @@ namespace ClassFinalProduct
         /// <summary>
         /// Уникальный идентификатор нового клиента (аналог автоинкремента)
         /// </summary>
-        private static int newid;
+        private static int _newid;
 
         private static int NewId
         {
             get
             {
-                newid++;
-                return newid;
+                _newid++;
+                return _newid;
             }
         }
         /// <summary>
         /// Уникальный идентификатор клиента
         /// </summary>
         public int UserId { get; }
-        public int _number_phone { get; set; } = 0;
-        private User Person;
-        public User _person { get
+        public int NumberPhone { get; set; } = 0;
+        private User _person;
+        public User Person { get
             {
-                if (_number_phone == 0)
+                if (NumberPhone == 0)
                     return new User();
                 else
                 {
-                    return Person;
+                    return _person;
                 }
             } set 
             {
-                Person = value;
+                _person = value;
             } 
         }
-        public string _address { get; set; }
+        public string Address { get; set; }
         public Сonsumer()
         {
             UserId = NewId;
-            _person = new User();
+            Person = new User();
             
         }
 
         public Сonsumer(int number_phone, User person, string addr)
         {
-            _number_phone = number_phone;
-            _person = person;
-            _address = addr;
+            NumberPhone = number_phone;
+            Person = person;
+            Address = addr;
             UserId = NewId;
         }
-        public bool isValid
+        public bool IsValid
         {
             get
             {
-                if (_number_phone != 0 && _person.isValid && _address != null)
+                if (NumberPhone != 0 && Person.IsValid && Address != null)
                     return true;
                 else
                     return false;
@@ -70,7 +64,7 @@ namespace ClassFinalProduct
         }
         public override string ToString()
         {
-            return $"{_person}";
+            return $"{Person}";
         }
     } 
 }

@@ -64,7 +64,7 @@ namespace ClassFinalProduct
         /// <param name="product"></param>
         public void AddProduct(Product product) 
         {
-            if (!product.isValid)
+            if (!product.IsValid)
             {
                 throw new InvalidProductException("Информация о продукте неверная!");
             }
@@ -84,7 +84,7 @@ namespace ClassFinalProduct
         /// <param name="consumer"></param>
         public void AddConsumer(Сonsumer consumer)
         {
-            if (!consumer.isValid)
+            if (!consumer.IsValid)
             {
                 throw new InvalidConsumerException("Информация о покупателе неверная!");
             }
@@ -104,7 +104,7 @@ namespace ClassFinalProduct
         /// <param name="deal"></param>
         public void AddDeal(Deal deal) 
         {
-            if (!deal.isValid)
+            if (!deal.IsValid)
             {
                 throw new InvalidDealException("Информация о сделке неверная!");
             }
@@ -128,7 +128,7 @@ namespace ClassFinalProduct
             //Генерируем событие о том, что продукт удалён
             ProductRemoved?.Invoke(productKey, EventArgs.Empty);
             //Получаем список сведений о поселении клиента
-            var DealsForProduct = Deals.Where(s => s._product.ProductId == productKey).ToList();
+            var DealsForProduct = Deals.Where(s => s.Productt.ProductId == productKey).ToList();
             for (int i = 0; i < DealsForProduct.Count; i++)
             {
                 //Удаляем сведения о сделке с товаром
@@ -141,7 +141,7 @@ namespace ClassFinalProduct
             //Генерируем событие о том, что покупатель удалён
             ConsumerRemoved?.Invoke(consumerKey, EventArgs.Empty);
             //Получаем список сведений о сделках покупателя
-            var DealsForConsumer = Deals.Where(s => s._person.UserId == consumerKey).ToList();
+            var DealsForConsumer = Deals.Where(s => s.Person.UserId == consumerKey).ToList();
             for (int i = 0; i < DealsForConsumer.Count; i++)
             {
                 //Удаляем сведения о сделках покупателя

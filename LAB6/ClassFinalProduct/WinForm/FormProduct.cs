@@ -20,10 +20,10 @@ namespace WinForm
             set
             {
                 _product = value;
-                textBox_title_product.Text = _product._title;
-                textBox_trade_price.Text = _product.Trade_price.ToString();
-                textBox_whosale_price.Text = _product.Wholesale_price.ToString();
-                description_product.Text = _product._description;
+                textBoxTitleProduct.Text = _product.Title;
+                textBoxTradePrice.Text = _product.TradePrice.ToString();
+                textBoxWhosalePrice.Text = _product.Wholesale_price.ToString();
+                textBoxDescriptionProduct.Text = _product.Description;
             }
         }
         public FormProduct()
@@ -31,21 +31,21 @@ namespace WinForm
             InitializeComponent();
         }
 
-        private void save_product_Click(object sender, EventArgs e)
+        private void Save_product_Click(object sender, EventArgs e)
         {
-          _product._title = textBox_title_product.Text;
+          _product.Title = textBoxTitleProduct.Text;
             try
             {
-                _product.Trade_price = Convert.ToDecimal(textBox_trade_price.Text);
-                _product.Wholesale_price = Convert.ToDecimal(textBox_whosale_price.Text);
+                _product.TradePrice = Convert.ToDecimal(textBoxTradePrice.Text);
+                _product.Wholesale_price = Convert.ToDecimal(textBoxWhosalePrice.Text);
                 DialogResult = DialogResult.OK;
             }
-            catch (Exception  exp)
+            catch (Exception)
             {
                 MessageBox.Show("Неверные данные");
                 DialogResult = DialogResult.None;
             }
-          _product._description = description_product.Text;
+          _product.Description = textBoxDescriptionProduct.Text;
         }
     }
 }

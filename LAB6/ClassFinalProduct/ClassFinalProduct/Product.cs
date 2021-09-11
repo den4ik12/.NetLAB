@@ -1,10 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-
-namespace ClassFinalProduct
+﻿namespace ClassFinalProduct
 {
     public class Product : IValidatable
     {
@@ -25,43 +19,43 @@ namespace ClassFinalProduct
         /// Уникальный идентификатор товара
         /// </summary>
         public int ProductId { get; }
-        public string _title { get; set; } //название
+        public string Title { get; set; } //название
 
-        private decimal _wholesale_price = -1;
+        private decimal _wholesalePrice = -1;
 
-        private decimal _trade_price = -1;
+        private decimal _tradePrice = -1;
         public decimal Wholesale_price
         { 
             get 
             { 
-                return _wholesale_price; 
+                return _wholesalePrice; 
             }
             set 
             {
                 if (value > 0)
-                    _wholesale_price = value;
+                    _wholesalePrice = value;
                
             }
         }
-        public decimal Trade_price 
+        public decimal TradePrice 
         { 
             get 
             {
-                return _trade_price;
+                return _tradePrice;
             }
             set 
             {   
                 if (value > 0)
-                    _trade_price = value;
+                    _tradePrice = value;
                 }
          } 
 
-        public string _description { get; set; }
-        public bool isValid
+        public string Description { get; set; }
+        public bool IsValid
         {
             get
             {
-                if (_title != null && _wholesale_price!= -1 && _trade_price != -1 && _description != null)
+                if (Title != null && Wholesale_price!= -1 && TradePrice != -1 && Description != null)
                     return true;
                 else
                 {
@@ -76,16 +70,16 @@ namespace ClassFinalProduct
         }
         public Product(string title, decimal wholosale_price, decimal trade_price, string description)
         {
-            _title = title;
+            Title = title;
             Wholesale_price = wholosale_price;
-            Trade_price = trade_price;
-            _description = description;
+            TradePrice = trade_price;
+            Description = description;
             ProductId = NewId;
         }
 
         public override string ToString()
         {
-            return $"{_title}";
+            return $"{Title}";
         }
     }
 }

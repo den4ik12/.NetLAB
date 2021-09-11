@@ -15,7 +15,7 @@ namespace WinForm
             set
             {
                 _deal = value;
-                set_deal_config();
+                Set_deal_config();
             }
         }
         private readonly Company _company = Company.Instanse;
@@ -26,9 +26,8 @@ namespace WinForm
             _company.ConsumerRemoved += _company_ConsumerRemoved;
             _company.ProductAdded += _company_ProductAdded;
             _company.ProductRemoved += _company_ProductRemoved;
-            fill_comboBox(); //Заполнение списка товаров и покупателей
+            Fill_comboBox(); //Заполнение списка товаров и покупателей
         }
-
 
         private void _company_ProductRemoved(object sender, EventArgs e)
         {
@@ -68,7 +67,7 @@ namespace WinForm
             comboBoxConsumer.Items.Add(sender);
         }
 
-        private void fill_comboBox()
+        private void Fill_comboBox()
         {
             foreach (var product in _company.Products)
                 comboBoxProduct.Items.Add(product);
@@ -76,38 +75,38 @@ namespace WinForm
             foreach (var consumer in _company.Consumers)
                 comboBoxConsumer.Items.Add(consumer);
         }
-        private void set_deal_config()
+        private void Set_deal_config()
         {
-            comboBoxProduct.SelectedItem = _deal._product;
-            comboBoxConsumer.SelectedItem = _deal._person;
+            comboBoxProduct.SelectedItem = _deal.Productt;
+            comboBoxConsumer.SelectedItem = _deal.Person;
             
 
-            dateTimePickerDeal.Value = _deal._time;
-            checkBoxWholesale.Checked = _deal._wholesale;
-            if (!_deal._wholesale){
+            dateTimePickerDeal.Value = _deal.Time;
+            checkBoxWholesale.Checked = _deal.Wholesale;
+            if (!_deal.Wholesale){
                 numericUpDownCountProduct.Minimum = 1;
             }
-            numericUpDownCountProduct.Value = _deal._count;
+            numericUpDownCountProduct.Value = _deal.Count;
         }
-        private void button_save_deal_Click(object sender, EventArgs e)
+        private void Button_save_deal_Click(object sender, EventArgs e)
         {
-            _deal._product = comboBoxProduct.SelectedItem as Product;
-            _deal._person = comboBoxConsumer.SelectedItem as ClassFinalProduct.Сonsumer;
-            _deal._count = Convert.ToInt32(numericUpDownCountProduct.Value);
-            _deal._time = dateTimePickerDeal.Value;
-            _deal._wholesale = checkBoxWholesale.Checked;
+            _deal.Productt = comboBoxProduct.SelectedItem as Product;
+            _deal.Person = comboBoxConsumer.SelectedItem as ClassFinalProduct.Сonsumer;
+            _deal.Count = Convert.ToInt32(numericUpDownCountProduct.Value);
+            _deal.Time = dateTimePickerDeal.Value;
+            _deal.Wholesale = checkBoxWholesale.Checked;
             DialogResult = DialogResult.OK;
 
         }
 
-        private void checkBox_wholesale_CheckedChanged(object sender, EventArgs e)
+        private void CheckBox_wholesale_CheckedChanged(object sender, EventArgs e)
         {
             if (checkBoxWholesale.Checked)
-                set_checkbox(500, 10000);
+                Set_checkbox(500, 10000);
             else
-                set_checkbox(1, 100);
+                Set_checkbox(1, 100);
         }
-        private void set_checkbox(int min, int max) 
+        private void Set_checkbox(int min, int max) 
             {
                 numericUpDownCountProduct.Minimum = min;
                 numericUpDownCountProduct.Maximum = max;

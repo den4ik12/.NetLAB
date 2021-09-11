@@ -115,7 +115,7 @@ namespace WinForm
             this.checkBoxWholesale.Size = new System.Drawing.Size(18, 17);
             this.checkBoxWholesale.TabIndex = 6;
             this.checkBoxWholesale.UseVisualStyleBackColor = true;
-            this.checkBoxWholesale.CheckedChanged += new System.EventHandler(this.checkBox_wholesale_CheckedChanged);
+            this.checkBoxWholesale.CheckedChanged += new System.EventHandler(this.CheckBox_wholesale_CheckedChanged);
             // 
             // comboBoxConsumer
             // 
@@ -169,7 +169,7 @@ namespace WinForm
             this.buttonSaveDeal.TabIndex = 10;
             this.buttonSaveDeal.Text = "Сохранить";
             this.buttonSaveDeal.UseVisualStyleBackColor = true;
-            this.buttonSaveDeal.Click += new System.EventHandler(this.button_save_deal_Click);
+            this.buttonSaveDeal.Click += new System.EventHandler(this.Button_save_deal_Click);
             // 
             // FormDeal
             // 

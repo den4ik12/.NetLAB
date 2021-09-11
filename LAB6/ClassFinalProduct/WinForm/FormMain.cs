@@ -45,7 +45,7 @@ namespace WinForm
             var deal = sender as Deal;
             if (deal != null)
             {
-                update_deal_list(deal);
+                Update_deal_list(deal);
             }
         }
 
@@ -67,7 +67,7 @@ namespace WinForm
             var room = sender as Product;
             if (room != null)
             {
-                update_list_products(room);
+                Update_list_products(room);
             }
         }
         private void _company_ConsumerRemoved(object sender, EventArgs e)
@@ -88,11 +88,11 @@ namespace WinForm
             var consumer = sender as ClassFinalProduct.Сonsumer;
             if (consumer != null)
             {
-                update_list_consumers(consumer);
+                Update_list_consumers(consumer);
             }
         }
 
-        private void add_product_MenuItem_Click(object sender, EventArgs e)
+        private void Add_product_MenuItem_Click(object sender, EventArgs e)
         {
             var product = new Product();
             _formProduct.Product = product;
@@ -118,7 +118,7 @@ namespace WinForm
         /// </summary>
         /// <param name="sender"></param>
         /// <param name="e"></param>
-        private void change_product_MenuItem_Click(object sender, EventArgs e)
+        private void Change_product_MenuItem_Click(object sender, EventArgs e)
         {
             try
             {
@@ -128,10 +128,10 @@ namespace WinForm
                 {
                     listViewProduct.SelectedItems[0].Text = _formProduct.Product.ToString();
                     var listViewItem = listViewProduct.SelectedItems[0];
-                    listViewItem.Text = product._title.ToString();
+                    listViewItem.Text = product.Title.ToString();
                     listViewItem.SubItems[1].Text = product.Wholesale_price.ToString();
-                    listViewItem.SubItems[2].Text = product.Trade_price.ToString();
-                    listViewItem.SubItems[3].Text = product._description;
+                    listViewItem.SubItems[2].Text = product.TradePrice.ToString();
+                    listViewItem.SubItems[3].Text = product.Description;
                 }
             }
             catch (Exception)
@@ -143,7 +143,7 @@ namespace WinForm
         /// <summary>
         /// Метод обновления списка товаров
         /// </summary>
-        private void update_list_products(Product product)
+        private void Update_list_products(Product product)
         {
             ListViewItem lvi = new ListViewItem
             {
@@ -151,9 +151,9 @@ namespace WinForm
                 Text = product.ToString()
 
             };
-            lvi.SubItems.Add(product.Trade_price.ToString());
+            lvi.SubItems.Add(product.TradePrice.ToString());
             lvi.SubItems.Add(product.Wholesale_price.ToString());
-            lvi.SubItems.Add(product._description.ToString());
+            lvi.SubItems.Add(product.Description.ToString());
             listViewProduct.Items.Add(lvi);
 
         }
@@ -161,7 +161,7 @@ namespace WinForm
         /// <summary>
         /// Метод автоматического добавления товаров, сделок, покупателей (тест)
         /// </summary>
-        private void test_add_deal()
+        private void _Test_add_deal()
         {
             ;
         }
@@ -170,7 +170,7 @@ namespace WinForm
         /// </summary>
         /// <param name="sender"></param>
         /// <param name="e"></param>
-        private void add_consumer_menuItem_Click(object sender, EventArgs e)
+        private void Add_consumer_menuItem_Click(object sender, EventArgs e)
         {
             var consumer = new ClassFinalProduct.Сonsumer();
             _formConsumer.Сonsumer = consumer;
@@ -192,7 +192,7 @@ namespace WinForm
         /// </summary>
         /// <param name="sender"></param>
         /// <param name="e"></param>
-        private void change_consumer_menuItem_Click(object sender, EventArgs e)
+        private void Change_consumer_menuItem_Click(object sender, EventArgs e)
         {
             try
             {
@@ -200,12 +200,12 @@ namespace WinForm
                 _formConsumer.Сonsumer = сonsumer;
                 if (_formConsumer.ShowDialog() == DialogResult.OK)
                 {
-                    listViewConsumer.SelectedItems[0].Text = _formConsumer.Сonsumer._person.Name;
+                    listViewConsumer.SelectedItems[0].Text = _formConsumer.Сonsumer.Person.Name;
                     var listViewItem = listViewConsumer.SelectedItems[0];
-                    listViewItem.Text = сonsumer._person.Name;
-                    listViewItem.SubItems[1].Text = сonsumer._person.Last_Name;
-                    listViewItem.SubItems[2].Text = сonsumer._number_phone.ToString();
-                    listViewItem.SubItems[3].Text = сonsumer._address;
+                    listViewItem.Text = сonsumer.Person.Name;
+                    listViewItem.SubItems[1].Text = сonsumer.Person.LastName;
+                    listViewItem.SubItems[2].Text = сonsumer.NumberPhone.ToString();
+                    listViewItem.SubItems[3].Text = сonsumer.Address;
                 }
             }
             catch (Exception)
@@ -216,22 +216,22 @@ namespace WinForm
         /// <summary>
         /// Метод обновления списка покупателей
         /// </summary>
-        private void update_list_consumers(Сonsumer consumer)
+        private void Update_list_consumers(Сonsumer consumer)
         {
 
             ListViewItem lvi = new ListViewItem
 
             {
                 Tag = consumer,
-                Text = consumer._person.Name
+                Text = consumer.Person.Name
             };
-            lvi.SubItems.Add(consumer._person.Last_Name);
-            lvi.SubItems.Add(consumer._number_phone.ToString());
-            lvi.SubItems.Add(consumer._address);
+            lvi.SubItems.Add(consumer.Person.LastName);
+            lvi.SubItems.Add(consumer.NumberPhone.ToString());
+            lvi.SubItems.Add(consumer.Address);
             listViewConsumer.Items.Add(lvi);
         }
 
-        private void add_deal_menu_Click(object sender, EventArgs e)
+        private void Add_deal_menu_Click(object sender, EventArgs e)
         {
             var deal = new Deal();
             _formDeal.Deal = deal;
@@ -248,7 +248,7 @@ namespace WinForm
             }
         }
 
-        private void change_deal_menu_Click(object sender, EventArgs e)
+        private void Change_deal_menu_Click(object sender, EventArgs e)
         {
             try
             {
@@ -258,11 +258,11 @@ namespace WinForm
                 {
                     deal = _formDeal.Deal;
                     var listViewItem = listViewDeal.SelectedItems[0];
-                    listViewItem.Text = deal._product.ToString();
-                    listViewItem.SubItems[1].Text = deal._count.ToString();
-                    listViewItem.SubItems[2].Text = deal._person.ToString();
-                    listViewItem.SubItems[3].Text = deal._wholesale.ToString();
-                    listViewItem.SubItems[4].Text = deal._time.ToShortDateString();
+                    listViewItem.Text = deal.Productt.ToString();
+                    listViewItem.SubItems[1].Text = deal.Count.ToString();
+                    listViewItem.SubItems[2].Text = deal.Person.ToString();
+                    listViewItem.SubItems[3].Text = deal.Wholesale.ToString();
+                    listViewItem.SubItems[4].Text = deal.Time.ToShortDateString();
                 }
             }
             catch (Exception)
@@ -271,26 +271,22 @@ namespace WinForm
             }
         }
 
-        private void update_deal_list(Deal deal)
+        private void Update_deal_list(Deal deal)
         {
 
             ListViewItem lvi = new ListViewItem
             {
                 Tag = deal,
-                Text = deal._product.ToString()
+                Text = deal.Productt.ToString()
             };
-            lvi.SubItems.Add(deal._count.ToString());
-            lvi.SubItems.Add(deal._person.ToString());
-            lvi.SubItems.Add(deal._wholesale.ToString());
-            lvi.SubItems.Add(deal._time.ToString());
+            lvi.SubItems.Add(deal.Count.ToString());
+            lvi.SubItems.Add(deal.Person.ToString());
+            lvi.SubItems.Add(deal.Wholesale.ToString());
+            lvi.SubItems.Add(deal.Time.ToString());
             listViewDeal.Items.Add(lvi);
         }
 
-        private void listViewDeal_Remove(object sender, KeyEventArgs e)
-        {
-
-        }
-        private void listViewConsumer_Remove(object sender, KeyEventArgs e)
+        private void ListViewConsumer_Remove(object sender, KeyEventArgs e)
         {
             if (e.KeyCode == Keys.Delete)
             {
@@ -309,7 +305,7 @@ namespace WinForm
             }
 
         }
-        private void listViewProduct_Remove(object sender, KeyEventArgs e)
+        private void ListViewProduct_Remove(object sender, KeyEventArgs e)
         {
             if (e.KeyCode == Keys.Delete)
             {
