@@ -1,0 +1,11 @@
+D:\Институт\3 курс\.NET\LABS\LAB7\ClassFinalProduct\WindowsFormsControlLibraryCompany\bin\Debug\WindowsFormsControlLibraryCompany.dll
+D:\Институт\3 курс\.NET\LABS\LAB7\ClassFinalProduct\WindowsFormsControlLibraryCompany\bin\Debug\WindowsFormsControlLibraryCompany.pdb
+D:\Институт\3 курс\.NET\LABS\LAB7\ClassFinalProduct\WindowsFormsControlLibraryCompany\bin\Debug\ClassFinalProduct.dll
+D:\Институт\3 курс\.NET\LABS\LAB7\ClassFinalProduct\WindowsFormsControlLibraryCompany\bin\Debug\ClassFinalProduct.pdb
+D:\Институт\3 курс\.NET\LABS\LAB7\ClassFinalProduct\WindowsFormsControlLibraryCompany\obj\Debug\WindowsFormsControlLibraryCompany.csproj.AssemblyReference.cache
+D:\Институт\3 курс\.NET\LABS\LAB7\ClassFinalProduct\WindowsFormsControlLibraryCompany\obj\Debug\WindowsFormsControlLibraryCompany.UserControlDeal.resources
+D:\Институт\3 курс\.NET\LABS\LAB7\ClassFinalProduct\WindowsFormsControlLibraryCompany\obj\Debug\WindowsFormsControlLibraryCompany.csproj.GenerateResource.cache
+D:\Институт\3 курс\.NET\LABS\LAB7\ClassFinalProduct\WindowsFormsControlLibraryCompany\obj\Debug\WindowsFormsControlLibraryCompany.csproj.CoreCompileInputs.cache
+D:\Институт\3 курс\.NET\LABS\LAB7\ClassFinalProduct\WindowsFormsControlLibraryCompany\obj\Debug\WindowsFormsControlLibraryCompany.csproj.CopyComplete
+D:\Институт\3 курс\.NET\LABS\LAB7\ClassFinalProduct\WindowsFormsControlLibraryCompany\obj\Debug\WindowsFormsControlLibraryCompany.dll
+D:\Институт\3 курс\.NET\LABS\LAB7\ClassFinalProduct\WindowsFormsControlLibraryCompany\obj\Debug\WindowsFormsControlLibraryCompany.pdb
