@@ -1,0 +1,10 @@
+D:\Институт\3 курс\.NET\LABS\LAB8.1\bin\Debug\LAB8.1.exe.config
+D:\Институт\3 курс\.NET\LABS\LAB8.1\bin\Debug\LAB8.1.exe
+D:\Институт\3 курс\.NET\LABS\LAB8.1\bin\Debug\LAB8.1.pdb
+D:\Институт\3 курс\.NET\LABS\LAB8.1\obj\Debug\LAB8.1.csproj.AssemblyReference.cache
+D:\Институт\3 курс\.NET\LABS\LAB8.1\obj\Debug\LAB8._1.Properties.Resources.resources
+D:\Институт\3 курс\.NET\LABS\LAB8.1\obj\Debug\LAB8.1.csproj.GenerateResource.cache
+D:\Институт\3 курс\.NET\LABS\LAB8.1\obj\Debug\LAB8.1.csproj.CoreCompileInputs.cache
+D:\Институт\3 курс\.NET\LABS\LAB8.1\obj\Debug\LAB8.1.exe
+D:\Институт\3 курс\.NET\LABS\LAB8.1\obj\Debug\LAB8.1.pdb
+D:\Институт\3 курс\.NET\LABS\LAB8.1\obj\Debug\LAB8._1.MainForm.resources
