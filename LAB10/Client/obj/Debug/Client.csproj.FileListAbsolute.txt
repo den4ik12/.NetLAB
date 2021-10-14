@@ -1,0 +1,13 @@
+D:\Институт\3 курс\.NET\LABS\LAB10\Client\bin\Debug\Client.exe.config
+D:\Институт\3 курс\.NET\LABS\LAB10\Client\bin\Debug\Client.exe
+D:\Институт\3 курс\.NET\LABS\LAB10\Client\bin\Debug\Client.pdb
+D:\Институт\3 курс\.NET\LABS\LAB10\Client\obj\Debug\Client.csproj.AssemblyReference.cache
+D:\Институт\3 курс\.NET\LABS\LAB10\Client\obj\Debug\Client.Properties.Resources.resources
+D:\Институт\3 курс\.NET\LABS\LAB10\Client\obj\Debug\Client.csproj.GenerateResource.cache
+D:\Институт\3 курс\.NET\LABS\LAB10\Client\obj\Debug\Client.csproj.CoreCompileInputs.cache
+D:\Институт\3 курс\.NET\LABS\LAB10\Client\obj\Debug\Client.exe
+D:\Институт\3 курс\.NET\LABS\LAB10\Client\obj\Debug\Client.pdb
+D:\Институт\3 курс\.NET\LABS\LAB10\Client\bin\Debug\Newtonsoft.Json.dll
+D:\Институт\3 курс\.NET\LABS\LAB10\Client\bin\Debug\Newtonsoft.Json.xml
+D:\Институт\3 курс\.NET\LABS\LAB10\Client\obj\Debug\Client.csproj.CopyComplete
+D:\Институт\3 курс\.NET\LABS\LAB10\Client\obj\Debug\Client.ClientForm.resources

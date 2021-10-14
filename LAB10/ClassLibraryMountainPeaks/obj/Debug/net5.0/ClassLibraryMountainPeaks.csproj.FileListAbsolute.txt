@@ -1,0 +1,11 @@
+D:\Институт\3 курс\.NET\LABS\LAB10\ClassLibraryMountainPeaks\bin\Debug\net5.0\ClassLibraryMountainPeaks.deps.json
+D:\Институт\3 курс\.NET\LABS\LAB10\ClassLibraryMountainPeaks\bin\Debug\net5.0\ClassLibraryMountainPeaks.dll
+D:\Институт\3 курс\.NET\LABS\LAB10\ClassLibraryMountainPeaks\bin\Debug\net5.0\ref\ClassLibraryMountainPeaks.dll
+D:\Институт\3 курс\.NET\LABS\LAB10\ClassLibraryMountainPeaks\bin\Debug\net5.0\ClassLibraryMountainPeaks.pdb
+D:\Институт\3 курс\.NET\LABS\LAB10\ClassLibraryMountainPeaks\obj\Debug\net5.0\ClassLibraryMountainPeaks.GeneratedMSBuildEditorConfig.editorconfig
+D:\Институт\3 курс\.NET\LABS\LAB10\ClassLibraryMountainPeaks\obj\Debug\net5.0\ClassLibraryMountainPeaks.AssemblyInfoInputs.cache
+D:\Институт\3 курс\.NET\LABS\LAB10\ClassLibraryMountainPeaks\obj\Debug\net5.0\ClassLibraryMountainPeaks.AssemblyInfo.cs
+D:\Институт\3 курс\.NET\LABS\LAB10\ClassLibraryMountainPeaks\obj\Debug\net5.0\ClassLibraryMountainPeaks.csproj.CoreCompileInputs.cache
+D:\Институт\3 курс\.NET\LABS\LAB10\ClassLibraryMountainPeaks\obj\Debug\net5.0\ClassLibraryMountainPeaks.dll
+D:\Институт\3 курс\.NET\LABS\LAB10\ClassLibraryMountainPeaks\obj\Debug\net5.0\ref\ClassLibraryMountainPeaks.dll
+D:\Институт\3 курс\.NET\LABS\LAB10\ClassLibraryMountainPeaks\obj\Debug\net5.0\ClassLibraryMountainPeaks.pdb
