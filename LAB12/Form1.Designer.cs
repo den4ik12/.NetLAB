@@ -143,45 +143,50 @@ namespace LAB12
             // iD_CategoryLabel
             // 
             iD_CategoryLabel.AutoSize = true;
-            iD_CategoryLabel.Location = new System.Drawing.Point(19, 90);
+            iD_CategoryLabel.Location = new System.Drawing.Point(25, 111);
+            iD_CategoryLabel.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             iD_CategoryLabel.Name = "iD_CategoryLabel";
-            iD_CategoryLabel.Size = new System.Drawing.Size(43, 13);
+            iD_CategoryLabel.Size = new System.Drawing.Size(54, 17);
             iD_CategoryLabel.TabIndex = 2;
             iD_CategoryLabel.Text = "Марка:";
             // 
             // numberLabel
             // 
             numberLabel.AutoSize = true;
-            numberLabel.Location = new System.Drawing.Point(19, 12);
+            numberLabel.Location = new System.Drawing.Point(25, 15);
+            numberLabel.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             numberLabel.Name = "numberLabel";
-            numberLabel.Size = new System.Drawing.Size(44, 13);
+            numberLabel.Size = new System.Drawing.Size(55, 17);
             numberLabel.TabIndex = 4;
             numberLabel.Text = "Номер:";
             // 
             // firstNameLabel
             // 
             firstNameLabel.AutoSize = true;
-            firstNameLabel.Location = new System.Drawing.Point(19, 38);
+            firstNameLabel.Location = new System.Drawing.Point(25, 47);
+            firstNameLabel.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             firstNameLabel.Name = "firstNameLabel";
-            firstNameLabel.Size = new System.Drawing.Size(32, 13);
+            firstNameLabel.Size = new System.Drawing.Size(39, 17);
             firstNameLabel.TabIndex = 6;
             firstNameLabel.Text = "Имя:";
             // 
             // lastNameLabel
             // 
             lastNameLabel.AutoSize = true;
-            lastNameLabel.Location = new System.Drawing.Point(19, 64);
+            lastNameLabel.Location = new System.Drawing.Point(25, 79);
+            lastNameLabel.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             lastNameLabel.Name = "lastNameLabel";
-            lastNameLabel.Size = new System.Drawing.Size(59, 13);
+            lastNameLabel.Size = new System.Drawing.Size(74, 17);
             lastNameLabel.TabIndex = 8;
             lastNameLabel.Text = "Фамилия:";
             // 
             // photoLabel
             // 
             photoLabel.AutoSize = true;
-            photoLabel.Location = new System.Drawing.Point(19, 129);
+            photoLabel.Location = new System.Drawing.Point(25, 159);
+            photoLabel.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             photoLabel.Name = "photoLabel";
-            photoLabel.Size = new System.Drawing.Size(75, 13);
+            photoLabel.Size = new System.Drawing.Size(96, 17);
             photoLabel.TabIndex = 12;
             photoLabel.Text = "Фотография:";
             // 
@@ -215,19 +220,21 @@ namespace LAB12
             this.tabControl1.Controls.Add(this.tabPage1);
             this.tabControl1.Controls.Add(this.tabPage2);
             this.tabControl1.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.tabControl1.Location = new System.Drawing.Point(0, 24);
+            this.tabControl1.Location = new System.Drawing.Point(0, 30);
+            this.tabControl1.Margin = new System.Windows.Forms.Padding(4);
             this.tabControl1.Name = "tabControl1";
             this.tabControl1.SelectedIndex = 0;
-            this.tabControl1.Size = new System.Drawing.Size(800, 404);
+            this.tabControl1.Size = new System.Drawing.Size(1067, 498);
             this.tabControl1.TabIndex = 1;
             // 
             // tabPage1
             // 
             this.tabPage1.Controls.Add(this.splitContainer1);
-            this.tabPage1.Location = new System.Drawing.Point(4, 22);
+            this.tabPage1.Location = new System.Drawing.Point(4, 25);
+            this.tabPage1.Margin = new System.Windows.Forms.Padding(4);
             this.tabPage1.Name = "tabPage1";
-            this.tabPage1.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPage1.Size = new System.Drawing.Size(792, 378);
+            this.tabPage1.Padding = new System.Windows.Forms.Padding(4);
+            this.tabPage1.Size = new System.Drawing.Size(1059, 469);
             this.tabPage1.TabIndex = 0;
             this.tabPage1.Text = "Список пользователей";
             this.tabPage1.UseVisualStyleBackColor = true;
@@ -235,7 +242,8 @@ namespace LAB12
             // splitContainer1
             // 
             this.splitContainer1.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.splitContainer1.Location = new System.Drawing.Point(3, 3);
+            this.splitContainer1.Location = new System.Drawing.Point(4, 4);
+            this.splitContainer1.Margin = new System.Windows.Forms.Padding(4);
             this.splitContainer1.Name = "splitContainer1";
             // 
             // splitContainer1.Panel1
@@ -256,16 +264,18 @@ namespace LAB12
             this.splitContainer1.Panel2.Controls.Add(this.lastNameTextBox);
             this.splitContainer1.Panel2.Controls.Add(photoLabel);
             this.splitContainer1.Panel2.Controls.Add(this.photoPictureBox);
-            this.splitContainer1.Size = new System.Drawing.Size(786, 372);
-            this.splitContainer1.SplitterDistance = 501;
+            this.splitContainer1.Size = new System.Drawing.Size(1051, 461);
+            this.splitContainer1.SplitterDistance = 669;
+            this.splitContainer1.SplitterWidth = 5;
             this.splitContainer1.TabIndex = 0;
             // 
             // propertyGrid1
             // 
-            this.propertyGrid1.Location = new System.Drawing.Point(-3, 102);
+            this.propertyGrid1.Location = new System.Drawing.Point(-4, 126);
+            this.propertyGrid1.Margin = new System.Windows.Forms.Padding(4);
             this.propertyGrid1.Name = "propertyGrid1";
             this.propertyGrid1.SelectedObject = this.photoPictureBox;
-            this.propertyGrid1.Size = new System.Drawing.Size(504, 270);
+            this.propertyGrid1.Size = new System.Drawing.Size(672, 332);
             this.propertyGrid1.TabIndex = 3;
             this.propertyGrid1.Visible = false;
             // 
@@ -273,33 +283,35 @@ namespace LAB12
             // 
             this.photoPictureBox.ContextMenuStrip = this.contextMenuStrip1;
             this.photoPictureBox.DataBindings.Add(new System.Windows.Forms.Binding("Image", this.autoBindingSource, "Photo", true));
-            this.photoPictureBox.Location = new System.Drawing.Point(100, 129);
+            this.photoPictureBox.Location = new System.Drawing.Point(133, 159);
+            this.photoPictureBox.Margin = new System.Windows.Forms.Padding(4);
             this.photoPictureBox.Name = "photoPictureBox";
-            this.photoPictureBox.Size = new System.Drawing.Size(169, 205);
+            this.photoPictureBox.Size = new System.Drawing.Size(225, 252);
             this.photoPictureBox.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.photoPictureBox.TabIndex = 13;
             this.photoPictureBox.TabStop = false;
             // 
             // contextMenuStrip1
             // 
+            this.contextMenuStrip1.ImageScalingSize = new System.Drawing.Size(20, 20);
             this.contextMenuStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.загрузитьИзФайлаToolStripMenuItem,
             this.сохранитьВФайлToolStripMenuItem,
             this.открытьСвойствоToolStripMenuItem});
             this.contextMenuStrip1.Name = "contextMenuStrip1";
-            this.contextMenuStrip1.Size = new System.Drawing.Size(182, 70);
+            this.contextMenuStrip1.Size = new System.Drawing.Size(214, 76);
             // 
             // загрузитьИзФайлаToolStripMenuItem
             // 
             this.загрузитьИзФайлаToolStripMenuItem.Name = "загрузитьИзФайлаToolStripMenuItem";
-            this.загрузитьИзФайлаToolStripMenuItem.Size = new System.Drawing.Size(181, 22);
+            this.загрузитьИзФайлаToolStripMenuItem.Size = new System.Drawing.Size(213, 24);
             this.загрузитьИзФайлаToolStripMenuItem.Text = "Загрузить из файла";
             this.загрузитьИзФайлаToolStripMenuItem.Click += new System.EventHandler(this.загрузитьИзФайлаToolStripMenuItem_Click);
             // 
             // сохранитьВФайлToolStripMenuItem
             // 
             this.сохранитьВФайлToolStripMenuItem.Name = "сохранитьВФайлToolStripMenuItem";
-            this.сохранитьВФайлToolStripMenuItem.Size = new System.Drawing.Size(181, 22);
+            this.сохранитьВФайлToolStripMenuItem.Size = new System.Drawing.Size(213, 24);
             this.сохранитьВФайлToolStripMenuItem.Text = "Сохранить в файл";
             this.сохранитьВФайлToolStripMenuItem.Click += new System.EventHandler(this.сохранитьВФайлToolStripMenuItem_Click);
             // 
@@ -309,20 +321,20 @@ namespace LAB12
             this.открытьToolStripMenuItem,
             this.закрытьToolStripMenuItem});
             this.открытьСвойствоToolStripMenuItem.Name = "открытьСвойствоToolStripMenuItem";
-            this.открытьСвойствоToolStripMenuItem.Size = new System.Drawing.Size(181, 22);
+            this.открытьСвойствоToolStripMenuItem.Size = new System.Drawing.Size(213, 24);
             this.открытьСвойствоToolStripMenuItem.Text = "Свойство";
             // 
             // открытьToolStripMenuItem
             // 
             this.открытьToolStripMenuItem.Name = "открытьToolStripMenuItem";
-            this.открытьToolStripMenuItem.Size = new System.Drawing.Size(121, 22);
+            this.открытьToolStripMenuItem.Size = new System.Drawing.Size(150, 26);
             this.открытьToolStripMenuItem.Text = "Открыть";
             this.открытьToolStripMenuItem.Click += new System.EventHandler(this.открытьToolStripMenuItem_Click);
             // 
             // закрытьToolStripMenuItem
             // 
             this.закрытьToolStripMenuItem.Name = "закрытьToolStripMenuItem";
-            this.закрытьToolStripMenuItem.Size = new System.Drawing.Size(121, 22);
+            this.закрытьToolStripMenuItem.Size = new System.Drawing.Size(150, 26);
             this.закрытьToolStripMenuItem.Text = "Закрыть";
             this.закрытьToolStripMenuItem.Click += new System.EventHandler(this.закрытьToolStripMenuItem_Click);
             // 
@@ -339,32 +351,40 @@ namespace LAB12
             this.photoDataGridViewImageColumn});
             this.usersDataGridView.DataSource = this.autoBindingSource;
             this.usersDataGridView.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.usersDataGridView.Location = new System.Drawing.Point(0, 25);
+            this.usersDataGridView.Location = new System.Drawing.Point(0, 27);
+            this.usersDataGridView.Margin = new System.Windows.Forms.Padding(4);
             this.usersDataGridView.Name = "usersDataGridView";
             this.usersDataGridView.ReadOnly = true;
-            this.usersDataGridView.Size = new System.Drawing.Size(501, 347);
+            this.usersDataGridView.RowHeadersWidth = 51;
+            this.usersDataGridView.Size = new System.Drawing.Size(669, 434);
             this.usersDataGridView.TabIndex = 0;
             // 
             // numberDataGridViewTextBoxColumn
             // 
             this.numberDataGridViewTextBoxColumn.DataPropertyName = "Number";
             this.numberDataGridViewTextBoxColumn.HeaderText = "Номер";
+            this.numberDataGridViewTextBoxColumn.MinimumWidth = 6;
             this.numberDataGridViewTextBoxColumn.Name = "numberDataGridViewTextBoxColumn";
             this.numberDataGridViewTextBoxColumn.ReadOnly = true;
+            this.numberDataGridViewTextBoxColumn.Width = 125;
             // 
             // uName
             // 
             this.uName.DataPropertyName = "uName";
             this.uName.HeaderText = "Имя";
+            this.uName.MinimumWidth = 6;
             this.uName.Name = "uName";
             this.uName.ReadOnly = true;
+            this.uName.Width = 125;
             // 
             // LastName
             // 
             this.LastName.DataPropertyName = "LastName";
             this.LastName.HeaderText = "Фамилия";
+            this.LastName.MinimumWidth = 6;
             this.LastName.Name = "LastName";
             this.LastName.ReadOnly = true;
+            this.LastName.Width = 125;
             // 
             // producerIdDataGridViewTextBoxColumn
             // 
@@ -373,11 +393,13 @@ namespace LAB12
             this.producerIdDataGridViewTextBoxColumn.DisplayMember = "Title";
             this.producerIdDataGridViewTextBoxColumn.DisplayStyle = System.Windows.Forms.DataGridViewComboBoxDisplayStyle.Nothing;
             this.producerIdDataGridViewTextBoxColumn.HeaderText = "Марка";
+            this.producerIdDataGridViewTextBoxColumn.MinimumWidth = 6;
             this.producerIdDataGridViewTextBoxColumn.Name = "producerIdDataGridViewTextBoxColumn";
             this.producerIdDataGridViewTextBoxColumn.ReadOnly = true;
             this.producerIdDataGridViewTextBoxColumn.Resizable = System.Windows.Forms.DataGridViewTriState.True;
             this.producerIdDataGridViewTextBoxColumn.SortMode = System.Windows.Forms.DataGridViewColumnSortMode.Automatic;
             this.producerIdDataGridViewTextBoxColumn.ValueMember = "ProducerId";
+            this.producerIdDataGridViewTextBoxColumn.Width = 125;
             // 
             // producerBindingSource
             // 
@@ -388,8 +410,10 @@ namespace LAB12
             // 
             this.photoDataGridViewImageColumn.DataPropertyName = "Photo";
             this.photoDataGridViewImageColumn.HeaderText = "Photo";
+            this.photoDataGridViewImageColumn.MinimumWidth = 6;
             this.photoDataGridViewImageColumn.Name = "photoDataGridViewImageColumn";
             this.photoDataGridViewImageColumn.ReadOnly = true;
+            this.photoDataGridViewImageColumn.Width = 125;
             // 
             // bindingNavigator1
             // 
@@ -397,6 +421,7 @@ namespace LAB12
             this.bindingNavigator1.BindingSource = this.autoBindingSource;
             this.bindingNavigator1.CountItem = this.bindingNavigatorCountItem1;
             this.bindingNavigator1.DeleteItem = this.bindingNavigatorDeleteItem1;
+            this.bindingNavigator1.ImageScalingSize = new System.Drawing.Size(20, 20);
             this.bindingNavigator1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.bindingNavigatorMovePreviousItem1,
             this.bindingNavigatorSeparator3,
@@ -416,7 +441,7 @@ namespace LAB12
             this.bindingNavigator1.MovePreviousItem = this.bindingNavigatorMovePreviousItem1;
             this.bindingNavigator1.Name = "bindingNavigator1";
             this.bindingNavigator1.PositionItem = this.bindingNavigatorPositionItem1;
-            this.bindingNavigator1.Size = new System.Drawing.Size(501, 25);
+            this.bindingNavigator1.Size = new System.Drawing.Size(669, 27);
             this.bindingNavigator1.TabIndex = 2;
             this.bindingNavigator1.Text = "bindingNavigator1";
             // 
@@ -426,13 +451,13 @@ namespace LAB12
             this.bindingNavigatorAddNewItem1.Image = ((System.Drawing.Image)(resources.GetObject("bindingNavigatorAddNewItem1.Image")));
             this.bindingNavigatorAddNewItem1.Name = "bindingNavigatorAddNewItem1";
             this.bindingNavigatorAddNewItem1.RightToLeftAutoMirrorImage = true;
-            this.bindingNavigatorAddNewItem1.Size = new System.Drawing.Size(23, 22);
+            this.bindingNavigatorAddNewItem1.Size = new System.Drawing.Size(29, 24);
             this.bindingNavigatorAddNewItem1.Text = "Добавить";
             // 
             // bindingNavigatorCountItem1
             // 
             this.bindingNavigatorCountItem1.Name = "bindingNavigatorCountItem1";
-            this.bindingNavigatorCountItem1.Size = new System.Drawing.Size(43, 22);
+            this.bindingNavigatorCountItem1.Size = new System.Drawing.Size(55, 24);
             this.bindingNavigatorCountItem1.Text = "для {0}";
             this.bindingNavigatorCountItem1.ToolTipText = "Общее число элементов";
             // 
@@ -442,7 +467,7 @@ namespace LAB12
             this.bindingNavigatorDeleteItem1.Image = ((System.Drawing.Image)(resources.GetObject("bindingNavigatorDeleteItem1.Image")));
             this.bindingNavigatorDeleteItem1.Name = "bindingNavigatorDeleteItem1";
             this.bindingNavigatorDeleteItem1.RightToLeftAutoMirrorImage = true;
-            this.bindingNavigatorDeleteItem1.Size = new System.Drawing.Size(23, 22);
+            this.bindingNavigatorDeleteItem1.Size = new System.Drawing.Size(29, 24);
             this.bindingNavigatorDeleteItem1.Text = "Удалить";
             // 
             // bindingNavigatorMovePreviousItem1
@@ -451,13 +476,13 @@ namespace LAB12
             this.bindingNavigatorMovePreviousItem1.Image = ((System.Drawing.Image)(resources.GetObject("bindingNavigatorMovePreviousItem1.Image")));
             this.bindingNavigatorMovePreviousItem1.Name = "bindingNavigatorMovePreviousItem1";
             this.bindingNavigatorMovePreviousItem1.RightToLeftAutoMirrorImage = true;
-            this.bindingNavigatorMovePreviousItem1.Size = new System.Drawing.Size(23, 22);
+            this.bindingNavigatorMovePreviousItem1.Size = new System.Drawing.Size(29, 24);
             this.bindingNavigatorMovePreviousItem1.Text = "Переместить назад";
             // 
             // bindingNavigatorSeparator3
             // 
             this.bindingNavigatorSeparator3.Name = "bindingNavigatorSeparator3";
-            this.bindingNavigatorSeparator3.Size = new System.Drawing.Size(6, 25);
+            this.bindingNavigatorSeparator3.Size = new System.Drawing.Size(6, 27);
             // 
             // bindingNavigatorPositionItem1
             // 
@@ -465,14 +490,14 @@ namespace LAB12
             this.bindingNavigatorPositionItem1.AutoSize = false;
             this.bindingNavigatorPositionItem1.Font = new System.Drawing.Font("Segoe UI", 9F);
             this.bindingNavigatorPositionItem1.Name = "bindingNavigatorPositionItem1";
-            this.bindingNavigatorPositionItem1.Size = new System.Drawing.Size(50, 21);
+            this.bindingNavigatorPositionItem1.Size = new System.Drawing.Size(65, 27);
             this.bindingNavigatorPositionItem1.Text = "0";
             this.bindingNavigatorPositionItem1.ToolTipText = "Текущее положение";
             // 
             // bindingNavigatorSeparator4
             // 
             this.bindingNavigatorSeparator4.Name = "bindingNavigatorSeparator4";
-            this.bindingNavigatorSeparator4.Size = new System.Drawing.Size(6, 25);
+            this.bindingNavigatorSeparator4.Size = new System.Drawing.Size(6, 27);
             // 
             // bindingNavigatorMoveNextItem1
             // 
@@ -480,7 +505,7 @@ namespace LAB12
             this.bindingNavigatorMoveNextItem1.Image = ((System.Drawing.Image)(resources.GetObject("bindingNavigatorMoveNextItem1.Image")));
             this.bindingNavigatorMoveNextItem1.Name = "bindingNavigatorMoveNextItem1";
             this.bindingNavigatorMoveNextItem1.RightToLeftAutoMirrorImage = true;
-            this.bindingNavigatorMoveNextItem1.Size = new System.Drawing.Size(23, 22);
+            this.bindingNavigatorMoveNextItem1.Size = new System.Drawing.Size(29, 24);
             this.bindingNavigatorMoveNextItem1.Text = "Переместить вперед";
             // 
             // bindingNavigatorMoveLastItem1
@@ -489,20 +514,20 @@ namespace LAB12
             this.bindingNavigatorMoveLastItem1.Image = ((System.Drawing.Image)(resources.GetObject("bindingNavigatorMoveLastItem1.Image")));
             this.bindingNavigatorMoveLastItem1.Name = "bindingNavigatorMoveLastItem1";
             this.bindingNavigatorMoveLastItem1.RightToLeftAutoMirrorImage = true;
-            this.bindingNavigatorMoveLastItem1.Size = new System.Drawing.Size(23, 22);
+            this.bindingNavigatorMoveLastItem1.Size = new System.Drawing.Size(29, 24);
             this.bindingNavigatorMoveLastItem1.Text = "Переместить в конец";
             // 
             // bindingNavigatorSeparator5
             // 
             this.bindingNavigatorSeparator5.Name = "bindingNavigatorSeparator5";
-            this.bindingNavigatorSeparator5.Size = new System.Drawing.Size(6, 25);
+            this.bindingNavigatorSeparator5.Size = new System.Drawing.Size(6, 27);
             // 
             // toolStripButton1
             // 
             this.toolStripButton1.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
             this.toolStripButton1.Image = ((System.Drawing.Image)(resources.GetObject("toolStripButton1.Image")));
             this.toolStripButton1.Name = "toolStripButton1";
-            this.toolStripButton1.Size = new System.Drawing.Size(23, 22);
+            this.toolStripButton1.Size = new System.Drawing.Size(29, 24);
             this.toolStripButton1.Text = "Сохранить данные";
             this.toolStripButton1.Click += new System.EventHandler(this.toolStripButton1_Click_1);
             // 
@@ -513,44 +538,49 @@ namespace LAB12
             this.comboBox1.DisplayMember = "Title";
             this.comboBox1.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.comboBox1.FormattingEnabled = true;
-            this.comboBox1.Location = new System.Drawing.Point(100, 90);
+            this.comboBox1.Location = new System.Drawing.Point(133, 111);
+            this.comboBox1.Margin = new System.Windows.Forms.Padding(4);
             this.comboBox1.Name = "comboBox1";
-            this.comboBox1.Size = new System.Drawing.Size(78, 21);
+            this.comboBox1.Size = new System.Drawing.Size(103, 24);
             this.comboBox1.TabIndex = 14;
             this.comboBox1.ValueMember = "ProducerId";
             // 
             // loginTextBox
             // 
             this.loginTextBox.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.autoBindingSource, "Number", true));
-            this.loginTextBox.Location = new System.Drawing.Point(100, 9);
+            this.loginTextBox.Location = new System.Drawing.Point(133, 11);
+            this.loginTextBox.Margin = new System.Windows.Forms.Padding(4);
             this.loginTextBox.Name = "loginTextBox";
-            this.loginTextBox.Size = new System.Drawing.Size(169, 20);
+            this.loginTextBox.Size = new System.Drawing.Size(224, 22);
             this.loginTextBox.TabIndex = 5;
             // 
             // firstNameTextBox
             // 
             this.firstNameTextBox.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.autoBindingSource, "uName", true));
-            this.firstNameTextBox.Location = new System.Drawing.Point(100, 35);
+            this.firstNameTextBox.Location = new System.Drawing.Point(133, 43);
+            this.firstNameTextBox.Margin = new System.Windows.Forms.Padding(4);
             this.firstNameTextBox.Name = "firstNameTextBox";
-            this.firstNameTextBox.Size = new System.Drawing.Size(169, 20);
+            this.firstNameTextBox.Size = new System.Drawing.Size(224, 22);
             this.firstNameTextBox.TabIndex = 7;
             // 
             // lastNameTextBox
             // 
             this.lastNameTextBox.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.autoBindingSource, "LastName", true));
-            this.lastNameTextBox.Location = new System.Drawing.Point(100, 61);
+            this.lastNameTextBox.Location = new System.Drawing.Point(133, 75);
+            this.lastNameTextBox.Margin = new System.Windows.Forms.Padding(4);
             this.lastNameTextBox.Name = "lastNameTextBox";
-            this.lastNameTextBox.Size = new System.Drawing.Size(169, 20);
+            this.lastNameTextBox.Size = new System.Drawing.Size(224, 22);
             this.lastNameTextBox.TabIndex = 9;
             // 
             // tabPage2
             // 
             this.tabPage2.Controls.Add(this.categoriesDataGridView);
             this.tabPage2.Controls.Add(this.categoriesBindingNavigator);
-            this.tabPage2.Location = new System.Drawing.Point(4, 22);
+            this.tabPage2.Location = new System.Drawing.Point(4, 25);
+            this.tabPage2.Margin = new System.Windows.Forms.Padding(4);
             this.tabPage2.Name = "tabPage2";
-            this.tabPage2.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPage2.Size = new System.Drawing.Size(792, 378);
+            this.tabPage2.Padding = new System.Windows.Forms.Padding(4);
+            this.tabPage2.Size = new System.Drawing.Size(1059, 469);
             this.tabPage2.TabIndex = 1;
             this.tabPage2.Text = "Категории пользователей";
             this.tabPage2.UseVisualStyleBackColor = true;
@@ -564,22 +594,28 @@ namespace LAB12
             this.countryDataGridViewTextBoxColumn});
             this.categoriesDataGridView.DataSource = this.producerBindingSource;
             this.categoriesDataGridView.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.categoriesDataGridView.Location = new System.Drawing.Point(3, 28);
+            this.categoriesDataGridView.Location = new System.Drawing.Point(4, 31);
+            this.categoriesDataGridView.Margin = new System.Windows.Forms.Padding(4);
             this.categoriesDataGridView.Name = "categoriesDataGridView";
-            this.categoriesDataGridView.Size = new System.Drawing.Size(786, 347);
+            this.categoriesDataGridView.RowHeadersWidth = 51;
+            this.categoriesDataGridView.Size = new System.Drawing.Size(1051, 434);
             this.categoriesDataGridView.TabIndex = 0;
             // 
             // titleDataGridViewTextBoxColumn
             // 
             this.titleDataGridViewTextBoxColumn.DataPropertyName = "Title";
             this.titleDataGridViewTextBoxColumn.HeaderText = "Название";
+            this.titleDataGridViewTextBoxColumn.MinimumWidth = 6;
             this.titleDataGridViewTextBoxColumn.Name = "titleDataGridViewTextBoxColumn";
+            this.titleDataGridViewTextBoxColumn.Width = 125;
             // 
             // countryDataGridViewTextBoxColumn
             // 
             this.countryDataGridViewTextBoxColumn.DataPropertyName = "Country";
             this.countryDataGridViewTextBoxColumn.HeaderText = "Страна";
+            this.countryDataGridViewTextBoxColumn.MinimumWidth = 6;
             this.countryDataGridViewTextBoxColumn.Name = "countryDataGridViewTextBoxColumn";
+            this.countryDataGridViewTextBoxColumn.Width = 125;
             // 
             // categoriesBindingNavigator
             // 
@@ -587,6 +623,7 @@ namespace LAB12
             this.categoriesBindingNavigator.BindingSource = this.producerBindingSource;
             this.categoriesBindingNavigator.CountItem = this.bindingNavigatorCountItem;
             this.categoriesBindingNavigator.DeleteItem = this.bindingNavigatorDeleteItem;
+            this.categoriesBindingNavigator.ImageScalingSize = new System.Drawing.Size(20, 20);
             this.categoriesBindingNavigator.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.bindingNavigatorMoveFirstItem,
             this.bindingNavigatorMovePreviousItem,
@@ -600,14 +637,14 @@ namespace LAB12
             this.bindingNavigatorAddNewItem,
             this.bindingNavigatorDeleteItem,
             this.categoriesBindingNavigatorSaveItem});
-            this.categoriesBindingNavigator.Location = new System.Drawing.Point(3, 3);
+            this.categoriesBindingNavigator.Location = new System.Drawing.Point(4, 4);
             this.categoriesBindingNavigator.MoveFirstItem = this.bindingNavigatorMoveFirstItem;
             this.categoriesBindingNavigator.MoveLastItem = this.bindingNavigatorMoveLastItem;
             this.categoriesBindingNavigator.MoveNextItem = this.bindingNavigatorMoveNextItem;
             this.categoriesBindingNavigator.MovePreviousItem = this.bindingNavigatorMovePreviousItem;
             this.categoriesBindingNavigator.Name = "categoriesBindingNavigator";
             this.categoriesBindingNavigator.PositionItem = this.bindingNavigatorPositionItem;
-            this.categoriesBindingNavigator.Size = new System.Drawing.Size(786, 25);
+            this.categoriesBindingNavigator.Size = new System.Drawing.Size(1051, 27);
             this.categoriesBindingNavigator.TabIndex = 4;
             this.categoriesBindingNavigator.Text = "bindingNavigator1";
             // 
@@ -617,13 +654,13 @@ namespace LAB12
             this.bindingNavigatorAddNewItem.Image = ((System.Drawing.Image)(resources.GetObject("bindingNavigatorAddNewItem.Image")));
             this.bindingNavigatorAddNewItem.Name = "bindingNavigatorAddNewItem";
             this.bindingNavigatorAddNewItem.RightToLeftAutoMirrorImage = true;
-            this.bindingNavigatorAddNewItem.Size = new System.Drawing.Size(23, 22);
+            this.bindingNavigatorAddNewItem.Size = new System.Drawing.Size(29, 24);
             this.bindingNavigatorAddNewItem.Text = "Добавить";
             // 
             // bindingNavigatorCountItem
             // 
             this.bindingNavigatorCountItem.Name = "bindingNavigatorCountItem";
-            this.bindingNavigatorCountItem.Size = new System.Drawing.Size(43, 22);
+            this.bindingNavigatorCountItem.Size = new System.Drawing.Size(55, 24);
             this.bindingNavigatorCountItem.Text = "для {0}";
             this.bindingNavigatorCountItem.ToolTipText = "Общее число элементов";
             // 
@@ -633,7 +670,7 @@ namespace LAB12
             this.bindingNavigatorDeleteItem.Image = ((System.Drawing.Image)(resources.GetObject("bindingNavigatorDeleteItem.Image")));
             this.bindingNavigatorDeleteItem.Name = "bindingNavigatorDeleteItem";
             this.bindingNavigatorDeleteItem.RightToLeftAutoMirrorImage = true;
-            this.bindingNavigatorDeleteItem.Size = new System.Drawing.Size(23, 22);
+            this.bindingNavigatorDeleteItem.Size = new System.Drawing.Size(29, 24);
             this.bindingNavigatorDeleteItem.Text = "Удалить";
             // 
             // bindingNavigatorMoveFirstItem
@@ -642,7 +679,7 @@ namespace LAB12
             this.bindingNavigatorMoveFirstItem.Image = ((System.Drawing.Image)(resources.GetObject("bindingNavigatorMoveFirstItem.Image")));
             this.bindingNavigatorMoveFirstItem.Name = "bindingNavigatorMoveFirstItem";
             this.bindingNavigatorMoveFirstItem.RightToLeftAutoMirrorImage = true;
-            this.bindingNavigatorMoveFirstItem.Size = new System.Drawing.Size(23, 22);
+            this.bindingNavigatorMoveFirstItem.Size = new System.Drawing.Size(29, 24);
             this.bindingNavigatorMoveFirstItem.Text = "Переместить в начало";
             // 
             // bindingNavigatorMovePreviousItem
@@ -651,13 +688,13 @@ namespace LAB12
             this.bindingNavigatorMovePreviousItem.Image = ((System.Drawing.Image)(resources.GetObject("bindingNavigatorMovePreviousItem.Image")));
             this.bindingNavigatorMovePreviousItem.Name = "bindingNavigatorMovePreviousItem";
             this.bindingNavigatorMovePreviousItem.RightToLeftAutoMirrorImage = true;
-            this.bindingNavigatorMovePreviousItem.Size = new System.Drawing.Size(23, 22);
+            this.bindingNavigatorMovePreviousItem.Size = new System.Drawing.Size(29, 24);
             this.bindingNavigatorMovePreviousItem.Text = "Переместить назад";
             // 
             // bindingNavigatorSeparator
             // 
             this.bindingNavigatorSeparator.Name = "bindingNavigatorSeparator";
-            this.bindingNavigatorSeparator.Size = new System.Drawing.Size(6, 25);
+            this.bindingNavigatorSeparator.Size = new System.Drawing.Size(6, 27);
             // 
             // bindingNavigatorPositionItem
             // 
@@ -665,14 +702,14 @@ namespace LAB12
             this.bindingNavigatorPositionItem.AutoSize = false;
             this.bindingNavigatorPositionItem.Font = new System.Drawing.Font("Segoe UI", 9F);
             this.bindingNavigatorPositionItem.Name = "bindingNavigatorPositionItem";
-            this.bindingNavigatorPositionItem.Size = new System.Drawing.Size(50, 21);
+            this.bindingNavigatorPositionItem.Size = new System.Drawing.Size(65, 27);
             this.bindingNavigatorPositionItem.Text = "0";
             this.bindingNavigatorPositionItem.ToolTipText = "Текущее положение";
             // 
             // bindingNavigatorSeparator1
             // 
             this.bindingNavigatorSeparator1.Name = "bindingNavigatorSeparator1";
-            this.bindingNavigatorSeparator1.Size = new System.Drawing.Size(6, 25);
+            this.bindingNavigatorSeparator1.Size = new System.Drawing.Size(6, 27);
             // 
             // bindingNavigatorMoveNextItem
             // 
@@ -680,7 +717,7 @@ namespace LAB12
             this.bindingNavigatorMoveNextItem.Image = ((System.Drawing.Image)(resources.GetObject("bindingNavigatorMoveNextItem.Image")));
             this.bindingNavigatorMoveNextItem.Name = "bindingNavigatorMoveNextItem";
             this.bindingNavigatorMoveNextItem.RightToLeftAutoMirrorImage = true;
-            this.bindingNavigatorMoveNextItem.Size = new System.Drawing.Size(23, 22);
+            this.bindingNavigatorMoveNextItem.Size = new System.Drawing.Size(29, 24);
             this.bindingNavigatorMoveNextItem.Text = "Переместить вперед";
             // 
             // bindingNavigatorMoveLastItem
@@ -689,48 +726,51 @@ namespace LAB12
             this.bindingNavigatorMoveLastItem.Image = ((System.Drawing.Image)(resources.GetObject("bindingNavigatorMoveLastItem.Image")));
             this.bindingNavigatorMoveLastItem.Name = "bindingNavigatorMoveLastItem";
             this.bindingNavigatorMoveLastItem.RightToLeftAutoMirrorImage = true;
-            this.bindingNavigatorMoveLastItem.Size = new System.Drawing.Size(23, 22);
+            this.bindingNavigatorMoveLastItem.Size = new System.Drawing.Size(29, 24);
             this.bindingNavigatorMoveLastItem.Text = "Переместить в конец";
             // 
             // bindingNavigatorSeparator2
             // 
             this.bindingNavigatorSeparator2.Name = "bindingNavigatorSeparator2";
-            this.bindingNavigatorSeparator2.Size = new System.Drawing.Size(6, 25);
+            this.bindingNavigatorSeparator2.Size = new System.Drawing.Size(6, 27);
             // 
             // categoriesBindingNavigatorSaveItem
             // 
             this.categoriesBindingNavigatorSaveItem.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
             this.categoriesBindingNavigatorSaveItem.Image = ((System.Drawing.Image)(resources.GetObject("categoriesBindingNavigatorSaveItem.Image")));
             this.categoriesBindingNavigatorSaveItem.Name = "categoriesBindingNavigatorSaveItem";
-            this.categoriesBindingNavigatorSaveItem.Size = new System.Drawing.Size(23, 22);
+            this.categoriesBindingNavigatorSaveItem.Size = new System.Drawing.Size(29, 24);
             this.categoriesBindingNavigatorSaveItem.Text = "Сохранить данные";
             this.categoriesBindingNavigatorSaveItem.Click += new System.EventHandler(this.categoriesBindingNavigatorSaveItem_Click);
             // 
             // statusStrip1
             // 
+            this.statusStrip1.ImageScalingSize = new System.Drawing.Size(20, 20);
             this.statusStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.toolStripStatusLabel1});
-            this.statusStrip1.Location = new System.Drawing.Point(0, 428);
+            this.statusStrip1.Location = new System.Drawing.Point(0, 528);
             this.statusStrip1.Name = "statusStrip1";
-            this.statusStrip1.Size = new System.Drawing.Size(800, 22);
+            this.statusStrip1.Padding = new System.Windows.Forms.Padding(1, 0, 19, 0);
+            this.statusStrip1.Size = new System.Drawing.Size(1067, 26);
             this.statusStrip1.TabIndex = 3;
             this.statusStrip1.Text = "statusStrip1";
             // 
             // toolStripStatusLabel1
             // 
             this.toolStripStatusLabel1.Name = "toolStripStatusLabel1";
-            this.toolStripStatusLabel1.Size = new System.Drawing.Size(45, 17);
+            this.toolStripStatusLabel1.Size = new System.Drawing.Size(57, 20);
             this.toolStripStatusLabel1.Text = "Готово";
             // 
             // menuStrip1
             // 
+            this.menuStrip1.ImageScalingSize = new System.Drawing.Size(20, 20);
             this.menuStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.бДToolStripMenuItem,
             this.выходToolStripMenuItem,
             this.печатьToolStripMenuItem});
             this.menuStrip1.Location = new System.Drawing.Point(0, 0);
             this.menuStrip1.Name = "menuStrip1";
-            this.menuStrip1.Size = new System.Drawing.Size(800, 24);
+            this.menuStrip1.Size = new System.Drawing.Size(1067, 30);
             this.menuStrip1.TabIndex = 4;
             this.menuStrip1.Text = "menuStrip1";
             // 
@@ -740,27 +780,27 @@ namespace LAB12
             this.loadDBCarToolStripMenuItem,
             this.loadDBProducerToolStripMenuItem});
             this.бДToolStripMenuItem.Name = "бДToolStripMenuItem";
-            this.бДToolStripMenuItem.Size = new System.Drawing.Size(34, 20);
+            this.бДToolStripMenuItem.Size = new System.Drawing.Size(42, 24);
             this.бДToolStripMenuItem.Text = "БД";
             // 
             // loadDBCarToolStripMenuItem
             // 
             this.loadDBCarToolStripMenuItem.Name = "loadDBCarToolStripMenuItem";
-            this.loadDBCarToolStripMenuItem.Size = new System.Drawing.Size(240, 22);
+            this.loadDBCarToolStripMenuItem.Size = new System.Drawing.Size(298, 26);
             this.loadDBCarToolStripMenuItem.Text = "Загрузить таблицу \"Машины\"";
             this.loadDBCarToolStripMenuItem.Click += new System.EventHandler(this.загрузитьТаблицуПользователиToolStripMenuItem_Click);
             // 
             // loadDBProducerToolStripMenuItem
             // 
             this.loadDBProducerToolStripMenuItem.Name = "loadDBProducerToolStripMenuItem";
-            this.loadDBProducerToolStripMenuItem.Size = new System.Drawing.Size(240, 22);
+            this.loadDBProducerToolStripMenuItem.Size = new System.Drawing.Size(298, 26);
             this.loadDBProducerToolStripMenuItem.Text = "Загрузить таблицу \"Марки\"";
             this.loadDBProducerToolStripMenuItem.Click += new System.EventHandler(this.loadDBProducerToolStripMenuItem_Click);
             // 
             // выходToolStripMenuItem
             // 
             this.выходToolStripMenuItem.Name = "выходToolStripMenuItem";
-            this.выходToolStripMenuItem.Size = new System.Drawing.Size(54, 20);
+            this.выходToolStripMenuItem.Size = new System.Drawing.Size(67, 24);
             this.выходToolStripMenuItem.Text = "Выход";
             this.выходToolStripMenuItem.Click += new System.EventHandler(this.выходToolStripMenuItem_Click);
             // 
@@ -771,27 +811,27 @@ namespace LAB12
             this.предварительныйПросмотрToolStripMenuItem,
             this.настройкаПечатиToolStripMenuItem});
             this.печатьToolStripMenuItem.Name = "печатьToolStripMenuItem";
-            this.печатьToolStripMenuItem.Size = new System.Drawing.Size(58, 20);
+            this.печатьToolStripMenuItem.Size = new System.Drawing.Size(72, 24);
             this.печатьToolStripMenuItem.Text = "Печать";
             // 
             // печатьToolStripMenuItem1
             // 
             this.печатьToolStripMenuItem1.Name = "печатьToolStripMenuItem1";
-            this.печатьToolStripMenuItem1.Size = new System.Drawing.Size(233, 22);
+            this.печатьToolStripMenuItem1.Size = new System.Drawing.Size(294, 26);
             this.печатьToolStripMenuItem1.Text = "Печать";
             this.печатьToolStripMenuItem1.Click += new System.EventHandler(this.печатьToolStripMenuItem1_Click);
             // 
             // предварительныйПросмотрToolStripMenuItem
             // 
             this.предварительныйПросмотрToolStripMenuItem.Name = "предварительныйПросмотрToolStripMenuItem";
-            this.предварительныйПросмотрToolStripMenuItem.Size = new System.Drawing.Size(233, 22);
+            this.предварительныйПросмотрToolStripMenuItem.Size = new System.Drawing.Size(294, 26);
             this.предварительныйПросмотрToolStripMenuItem.Text = "Предварительный просмотр";
             this.предварительныйПросмотрToolStripMenuItem.Click += new System.EventHandler(this.предварительныйПросмотрToolStripMenuItem_Click);
             // 
             // настройкаПечатиToolStripMenuItem
             // 
             this.настройкаПечатиToolStripMenuItem.Name = "настройкаПечатиToolStripMenuItem";
-            this.настройкаПечатиToolStripMenuItem.Size = new System.Drawing.Size(233, 22);
+            this.настройкаПечатиToolStripMenuItem.Size = new System.Drawing.Size(294, 26);
             this.настройкаПечатиToolStripMenuItem.Text = "Настройка печати";
             this.настройкаПечатиToolStripMenuItem.Click += new System.EventHandler(this.настройкаПечатиToolStripMenuItem_Click);
             // 
@@ -836,12 +876,13 @@ namespace LAB12
             // 
             // Form1
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(800, 450);
+            this.ClientSize = new System.Drawing.Size(1067, 554);
             this.Controls.Add(this.tabControl1);
             this.Controls.Add(this.statusStrip1);
             this.Controls.Add(this.menuStrip1);
+            this.Margin = new System.Windows.Forms.Padding(4);
             this.Name = "Form1";
             this.Text = "БД \"Машины\"";
             this.Load += new System.EventHandler(this.Form1_Load);

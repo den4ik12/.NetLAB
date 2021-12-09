@@ -7,17 +7,17 @@ namespace LAB_9._2
     {
         static void Main()
         {
- private int F228 { get; set; }
-            public int F24
+			private int F228 { get; set; }
+            public int F24(){}
             int F { get; set; }
             public int F2 
-        { get; set; }
-        static int F3
-        { get; set; }
-	public static int F4
-        { get; set; }
-        string pattern = "";
-            Regex regex = new Regex(pattern);
+			{ get; set; }
+			static int F3
+			{ get; set; }
+			public static int F4
+			{ get; set; }
+			string pattern = "";
+			Regex regex = new Regex(pattern);
 
         }
     }

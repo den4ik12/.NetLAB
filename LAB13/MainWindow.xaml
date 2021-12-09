@@ -1,0 +1,61 @@
+﻿<Window x:Name="ManagerCarWPF" x:Class="LAB13.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:LAB13"
+        mc:Ignorable="d"
+        Title="MangerCarWPF" Height="375.6" Width="747.2" Loaded="Window_Loaded">
+    <Window.Resources>
+        <local:CarDataSet x:Key="carDataSet"/>
+        <CollectionViewSource x:Key="autoViewSource" Source="{Binding Auto, Source={StaticResource carDataSet}}"/>
+        <CollectionViewSource x:Key="producerViewSource" Source="{Binding Producer, Source={StaticResource carDataSet}}"/>
+    </Window.Resources>
+    <TabControl>
+        <TabItem Header="Машины">
+            <Grid Background="#FFE5E5E5" DataContext="{StaticResource autoViewSource}">
+                <Button x:Name="saveAuto" Content="Сохранить" HorizontalAlignment="Left" Margin="9,14,0,0" VerticalAlignment="Top" Width="75" Click="saveAuto_Click"/>
+                <Button x:Name="deleteAuto" Content="Удалить" HorizontalAlignment="Left" Margin="98,14,0,0" VerticalAlignment="Top" Width="75" Click="deleteAuto_Click"/>
+                <DataGrid x:Name="autoDataGrid" EnableRowVirtualization="True" RowDetailsVisibilityMode="VisibleWhenSelected" Margin="-2,59,282.2,0.4" ColumnWidth="SizeToHeader" AutoGenerateColumns="False" ItemsSource="{Binding Mode=OneWay}">
+                    <DataGrid.Columns>
+                        <DataGridTextColumn x:Name="numberColumn" Binding="{Binding Number}" Header="Номер" Width="SizeToHeader" FontWeight="Bold" MinWidth="40"/>
+                        <DataGridComboBoxColumn x:Name="UserColumn" ItemsSource="{Binding Source={StaticResource producerViewSource}}" Width="60" DisplayMemberPath="Title" SelectedValuePath="ProducerId" SelectedValueBinding="{Binding ProducerId}" Header="Марки"/>
+                        <DataGridTextColumn x:Name="NameColumn" Binding="{Binding uName}" Header="Имя" Width="SizeToHeader"/>
+                        <DataGridTextColumn x:Name="lastNameColumn" Binding="{Binding LastName}" Header="Фамилия" Width="SizeToHeader"/>
+                        <DataGridTemplateColumn Header="Фотография">
+                            <DataGridTemplateColumn.CellTemplate>
+                                <DataTemplate>
+                                    <Image Source="{Binding Photo}"></Image>
+                                </DataTemplate>
+                            </DataGridTemplateColumn.CellTemplate>
+                        </DataGridTemplateColumn>
+                    </DataGrid.Columns>
+                </DataGrid>
+                <Label x:Name="labelImage" Content="Фото&#xA;" HorizontalAlignment="Left" Margin="569,56,0,0" VerticalAlignment="Top" RenderTransformOrigin="0.834,-0.161" Height="25">
+                    <Label.ContextMenu>
+                        <ContextMenu>
+                            <Button x:Name="ContextImage" Content="Загрузить" Click="ContextImage_Click"/>
+                        </ContextMenu>
+                    </Label.ContextMenu>
+                </Label>
+                <Border BorderBrush="Black" BorderThickness="1" HorizontalAlignment="Left" Height="203" Margin="480,89,0,0" VerticalAlignment="Top" Width="222">
+                    <Image x:Name="photoImage" Source="{Binding Photo}">
+                    </Image>
+                </Border>
+            </Grid>
+
+        </TabItem>
+        <TabItem Header="Марки">
+            <Grid Background="#FFE5E5E5" DataContext="{StaticResource producerViewSource}">
+                <DataGrid x:Name="producerDataGrid" AutoGenerateColumns="False" EnableRowVirtualization="True" ItemsSource="{Binding}" Margin="2,52,10.2,7.4" RowDetailsVisibilityMode="VisibleWhenSelected">
+                    <DataGrid.Columns>
+                        <DataGridTextColumn x:Name="titleColumn" Binding="{Binding Title}" Header="Название" Width="SizeToHeader"/>
+                        <DataGridTextColumn x:Name="countryColumn" Binding="{Binding Country}" Header="Страна" Width="SizeToHeader"/>
+                    </DataGrid.Columns>
+                </DataGrid>
+                <Button x:Name="saveProducer" Content="Сохранить" HorizontalAlignment="Left" Margin="6,20,0,0" VerticalAlignment="Top" Width="75" Click="saveProducer_Click"/>
+                <Button x:Name="deleteProducer" Content="Удалить" HorizontalAlignment="Left" Margin="105,20,0,0" VerticalAlignment="Top" Width="75" Click="deleteProducer_Click"/>
+            </Grid>
+        </TabItem>
+    </TabControl>
+</Window>

@@ -21,6 +21,8 @@ namespace WindowsFormsControlLibraryCompany
             }
             set
             {
+                _selected = false;
+                Refresh();
                 if (value)
                 {
                     var controls = Parent?.Controls;
@@ -29,10 +31,10 @@ namespace WindowsFormsControlLibraryCompany
                         foreach (var control in controls)
                         {
                             if (!(control is UserControlDeal)) continue;
-                            var userControlSettlement = control as UserControlDeal;
-                            if (userControlSettlement != this)
+                            var userControlDeal = control as UserControlDeal;
+                            if (userControlDeal != this)
                             {
-                                userControlSettlement.Selected = false;
+                                userControlDeal.Selected = false;
                             }
                         }
                     }

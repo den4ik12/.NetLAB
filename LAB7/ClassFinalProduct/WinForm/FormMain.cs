@@ -324,6 +324,10 @@ namespace WinForm
             User u = new User("sdf", "sdf", 35);
             ClassFinalProduct.Сonsumer c = new ClassFinalProduct.Сonsumer(234, u, "sdf");
             _company.AddConsumer(c);
+            Deal d = new Deal(DateTime.Now, pr, 5, c, false);
+            Deal d2 = new Deal(DateTime.Now, pr, 5001, c, true);
+            _company.AddDeal(d);
+            _company.AddDeal(d2);
         }
 
     }

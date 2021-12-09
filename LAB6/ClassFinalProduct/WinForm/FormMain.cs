@@ -20,10 +20,7 @@ namespace WinForm
             _company.ProductRemoved += _company_ProductRemoved;
             _company.DealAdded += _company_DealAdded;
             _company.DealRemoved += _company_DealRemoved;
-            //test_add_deal();
-            //update_list_products();
-            //update_list_consumers();
-            //update_deal_list();
+            _Test_add_deal();
 
         }
 
@@ -163,7 +160,15 @@ namespace WinForm
         /// </summary>
         private void _Test_add_deal()
         {
-            ;
+            Product pr = new Product("sdfsd", 234, 234, "sdf");
+            _company.AddProduct(pr);
+            User u = new User("sdf", "sdf", 35);
+            ClassFinalProduct.Сonsumer c = new ClassFinalProduct.Сonsumer(234, u, "sdf");
+            _company.AddConsumer(c);
+            Deal d = new Deal(DateTime.Now, pr, 5, c, false);
+            Deal d2 = new Deal(DateTime.Now, pr, 5001, c, true);
+            _company.AddDeal(d);
+            _company.AddDeal(d2);
         }
         /// <summary>
         /// Метод обработки кнопки добавления нового покупателя
@@ -320,6 +325,25 @@ namespace WinForm
                 catch (Exception)
                 {
                     MessageBox.Show("Не выбрана строка с товаром");
+                }
+            }
+        }
+
+        private void ListViewDeal_Remove(object sender, KeyEventArgs e)
+        {
+            if (e.KeyCode == Keys.Delete)
+            {
+                try
+                {
+                    var deal = listViewDeal.SelectedItems[0].Tag as Deal;
+                    if (deal != null)
+                    {
+                        _company.RemoveDeal(deal);
+                    }
+                }
+                catch (Exception)
+                {
+                    MessageBox.Show("Не выбрана строка с сделкой");
                 }
             }
         }

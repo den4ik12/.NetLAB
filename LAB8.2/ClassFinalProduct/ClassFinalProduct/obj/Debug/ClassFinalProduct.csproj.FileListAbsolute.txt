@@ -31,3 +31,12 @@ D:\Институт\3 курс\.NET\LABS\LAB8.2\ClassFinalProduct\ClassFinalProd
 D:\Институт\3 курс\.NET\LABS\LAB8.2\ClassFinalProduct\ClassFinalProduct\bin\Debug\Newtonsoft.Json.dll
 D:\Институт\3 курс\.NET\LABS\LAB8.2\ClassFinalProduct\ClassFinalProduct\bin\Debug\Newtonsoft.Json.xml
 D:\Институт\3 курс\.NET\LABS\LAB8.2\ClassFinalProduct\ClassFinalProduct\obj\Debug\ClassFinalProduct.csproj.CopyComplete
+D:\Институт\3 курс\.NET\LABS\.NetLAb\LAB8.2\ClassFinalProduct\ClassFinalProduct\bin\Debug\ClassFinalProduct.dll
+D:\Институт\3 курс\.NET\LABS\.NetLAb\LAB8.2\ClassFinalProduct\ClassFinalProduct\bin\Debug\ClassFinalProduct.pdb
+D:\Институт\3 курс\.NET\LABS\.NetLAb\LAB8.2\ClassFinalProduct\ClassFinalProduct\bin\Debug\Newtonsoft.Json.dll
+D:\Институт\3 курс\.NET\LABS\.NetLAb\LAB8.2\ClassFinalProduct\ClassFinalProduct\bin\Debug\Newtonsoft.Json.xml
+D:\Институт\3 курс\.NET\LABS\.NetLAb\LAB8.2\ClassFinalProduct\ClassFinalProduct\obj\Debug\ClassFinalProduct.csproj.AssemblyReference.cache
+D:\Институт\3 курс\.NET\LABS\.NetLAb\LAB8.2\ClassFinalProduct\ClassFinalProduct\obj\Debug\ClassFinalProduct.csproj.CoreCompileInputs.cache
+D:\Институт\3 курс\.NET\LABS\.NetLAb\LAB8.2\ClassFinalProduct\ClassFinalProduct\obj\Debug\ClassFinalProduct.csproj.CopyComplete
+D:\Институт\3 курс\.NET\LABS\.NetLAb\LAB8.2\ClassFinalProduct\ClassFinalProduct\obj\Debug\ClassFinalProduct.dll
+D:\Институт\3 курс\.NET\LABS\.NetLAb\LAB8.2\ClassFinalProduct\ClassFinalProduct\obj\Debug\ClassFinalProduct.pdb

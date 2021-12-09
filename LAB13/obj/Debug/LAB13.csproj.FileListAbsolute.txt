@@ -1,0 +1,16 @@
+D:\Институт\3 курс\.NET\LABS\.NetLAb\LAB13\bin\Debug\LAB13.exe.config
+D:\Институт\3 курс\.NET\LABS\.NetLAb\LAB13\bin\Debug\LAB13.exe
+D:\Институт\3 курс\.NET\LABS\.NetLAb\LAB13\bin\Debug\LAB13.pdb
+D:\Институт\3 курс\.NET\LABS\.NetLAb\LAB13\obj\Debug\LAB13.csproj.AssemblyReference.cache
+D:\Институт\3 курс\.NET\LABS\.NetLAb\LAB13\obj\Debug\MainWindow.g.cs
+D:\Институт\3 курс\.NET\LABS\.NetLAb\LAB13\obj\Debug\App.g.cs
+D:\Институт\3 курс\.NET\LABS\.NetLAb\LAB13\obj\Debug\LAB13_MarkupCompile.cache
+D:\Институт\3 курс\.NET\LABS\.NetLAb\LAB13\obj\Debug\LAB13_MarkupCompile.lref
+D:\Институт\3 курс\.NET\LABS\.NetLAb\LAB13\obj\Debug\MainWindow.baml
+D:\Институт\3 курс\.NET\LABS\.NetLAb\LAB13\obj\Debug\LAB13.g.resources
+D:\Институт\3 курс\.NET\LABS\.NetLAb\LAB13\obj\Debug\LAB13.Properties.Resources.resources
+D:\Институт\3 курс\.NET\LABS\.NetLAb\LAB13\obj\Debug\LAB13.csproj.GenerateResource.cache
+D:\Институт\3 курс\.NET\LABS\.NetLAb\LAB13\obj\Debug\LAB13.csproj.CoreCompileInputs.cache
+D:\Институт\3 курс\.NET\LABS\.NetLAb\LAB13\obj\Debug\LAB13.exe
+D:\Институт\3 курс\.NET\LABS\.NetLAb\LAB13\obj\Debug\LAB13.pdb
+D:\Институт\3 курс\.NET\LABS\.NetLAb\LAB13\obj\Debug\GeneratedInternalTypeHelper.g.cs

@@ -1,10 +1,10 @@
 {
   "version": 2,
-  "dgSpecHash": "848oiZO2CBwwRI+cR+ABXzGITJM/7SSTMBhHDE5tOTCGvpxfwATOavv9iJsp+vcaEIGgpOwDjXjplCXT/XUteQ==",
+  "dgSpecHash": "bP2D4CFuUtpA426qIKDN10Pm7EzZ3p3SJoec2GqCpxQHn8lta8sRKXNgnWl7qhTTiTYTjCmMEru/ygffuT8u8g==",
   "success": true,
-  "projectFilePath": "D:\\Институт\\3 курс\\.NET\\LABS\\LAB10\\Server\\Server.csproj",
+  "projectFilePath": "D:\\Институт\\3 курс\\.NET\\LABS\\.NetLAb\\LAB10\\Server\\Server.csproj",
   "expectedPackageFiles": [
-    "C:\\Users\\Денис\\.nuget\\packages\\newtonsoft.json\\13.0.1\\newtonsoft.json.13.0.1.nupkg.sha512"
+    "C:\\Users\\Admin\\.nuget\\packages\\newtonsoft.json\\13.0.1\\newtonsoft.json.13.0.1.nupkg.sha512"
   ],
   "logs": []
 }

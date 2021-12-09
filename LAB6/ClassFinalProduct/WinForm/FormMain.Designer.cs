@@ -156,7 +156,7 @@ namespace WinForm
             this.contextMenuStrip.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.contextMenuStrip.ImageScalingSize = new System.Drawing.Size(20, 20);
             this.contextMenuStrip.Name = "contextMenuStrip1";
-            this.contextMenuStrip.Size = new System.Drawing.Size(211, 32);
+            this.contextMenuStrip.Size = new System.Drawing.Size(61, 4);
             // 
             // tabControlMain
             // 
@@ -307,6 +307,7 @@ namespace WinForm
             this.listViewDeal.TabIndex = 0;
             this.listViewDeal.UseCompatibleStateImageBehavior = false;
             this.listViewDeal.View = System.Windows.Forms.View.Details;
+            this.listViewDeal.KeyUp += new System.Windows.Forms.KeyEventHandler(this.ListViewDeal_Remove);
             // 
             // columnHeaderProduct
             // 
@@ -348,6 +349,7 @@ namespace WinForm
             this.Margin = new System.Windows.Forms.Padding(4);
             this.Name = "FormMain";
             this.Text = "CRM фирмы";
+            this.KeyUp += new System.Windows.Forms.KeyEventHandler(this.ListViewProduct_Remove);
             this.MenuStripMy.ResumeLayout(false);
             this.MenuStripMy.PerformLayout();
             this.tabControlMain.ResumeLayout(false);

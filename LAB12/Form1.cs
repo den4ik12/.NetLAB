@@ -181,17 +181,15 @@ namespace LAB12
             string name = (string)usersDataGridView.Rows[index].Cells[1].Value;
             string lastName = (string)usersDataGridView.Rows[index].Cells[2].Value;
             string marka = usersDataGridView.Rows[index].Cells[3].Value.ToString();
-
             richTextBox1.Text += $"Номер машины: {phone}\n" +
                 $"Имя владельца: {name}\n" +
                 $"Фамилия владельца: {lastName}\n" +
                 $"Марка: {marka}";
-
             // Создать шрифт myFont
             Font myFont = new Font("Arial", 14, FontStyle.Regular, GraphicsUnit.Pixel);
 
             string curLine; // текущая выводимая строка
-
+            
             // Отступы внутри страницы
             float leftMargin = e.MarginBounds.Left; // отступы слева в документе
             float topMargin = e.MarginBounds.Top; // отступы сверху в документе
@@ -218,17 +216,29 @@ namespace LAB12
                 yPos = topMargin + i * myFont.GetHeight(e.Graphics);
 
                 // Вывести строку в документ
-                e.Graphics.DrawString(curLine, myFont, Brushes.Blue,
-                  leftMargin, yPos, new StringFormat());
+               //e.Graphics.DrawString(curLine, myFont, Brushes.Blue,
+                 // leftMargin, yPos, new StringFormat());
 
                 counter++;
                 i++;
             }
-
+            
             // Если весь текст не помещается на 1 страницу, то
             // нужно добавить дополнительную страницу для печати
             e.HasMorePages = false;
+            Point loc = new Point(0, 10);
+            System.Drawing.SolidBrush solidBrush = new System.Drawing.SolidBrush(System.Drawing.Color.Black);
+            e.Graphics.DrawString(richTextBox1.Text,myFont,solidBrush,loc);
+            
+            Point loc2 = new Point(0, 100);
+            try
+            {
+                e.Graphics.DrawImage(photoPictureBox.Image, loc2);
+            }
+            catch (Exception)
+            {
 
+            }
             if (curPage < nPages)
             {
                 curPage++;
